@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5F9A81E85AFD4FFAA7013F72304443BC"
+               BlueprintIdentifier = "C6C51C5F23D9890E6B75A763125ACE6B"
                BuildableName = "Pods_CineWorld.framework"
                BlueprintName = "Pods-CineWorld"
                ReferencedContainer = "container:Pods.xcodeproj">
