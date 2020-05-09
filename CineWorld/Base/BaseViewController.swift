@@ -48,9 +48,8 @@ class BaseViewController: UIViewController {
     
     func addShadow(views: [UIView]) {
         views.forEach { (view) in
-            view.layer.cornerRadius = 10
             view.layer.masksToBounds = true
-            view.layer.shadowOpacity = 0.5
+            view.layer.shadowOpacity = 1
             view.layer.shadowOffset = CGSize(width: 2, height: 2)
             view.layer.shadowColor = UIColor.darkGray.cgColor
             view.clipsToBounds = false

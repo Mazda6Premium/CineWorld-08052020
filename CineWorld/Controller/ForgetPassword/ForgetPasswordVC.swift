@@ -8,23 +8,33 @@
 
 import UIKit
 
-class ForgetPasswordVC: UIViewController {
-
+class ForgetPasswordVC: BaseViewController {
+    
+    @IBOutlet weak var viewPopup: UIView!
+    @IBOutlet weak var txtPhone: UITextField!
+    @IBOutlet weak var txtBirthday: UITextField!
+    @IBOutlet weak var txtPassword: UITextField!
+    @IBOutlet weak var txtConfirmPassword: UITextField!
+    @IBOutlet weak var btnCancel: UIButton!
+    @IBOutlet weak var btnConfirmPass: UIButton!
+    @IBOutlet weak var btnSetPassword: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        setupView()
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    func setupView() {
+        view.isOpaque = false
+        view.backgroundColor = UIColor.black.withAlphaComponent(0.5)
+        
+        roundCorner(views: [viewPopup], radius: ROUND_CORNER_VIEW_POPUP)
+        roundCorner(views: [btnCancel, btnConfirmPass, btnSetPassword], radius: ROUND_CORNER_BUTTON)
     }
-    */
-
+    
+    @IBAction func tapOnCancel(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
 }
