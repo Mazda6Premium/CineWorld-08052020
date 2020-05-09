@@ -20,13 +20,24 @@
 		A8DDDC652465AAD700FBA132 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8DDDC642465AAD700FBA132 /* Assets.xcassets */; };
 		A8DDDC682465AAD700FBA132 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8DDDC662465AAD700FBA132 /* LaunchScreen.storyboard */; };
 		A8DDDC702465AB4F00FBA132 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A8DDDC6F2465AB4F00FBA132 /* GoogleService-Info.plist */; };
+		A8EF32712467044A00CF8088 /* NewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EF326F2467044A00CF8088 /* NewCell.swift */; };
+		A8EF32722467044A00CF8088 /* NewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8EF32702467044A00CF8088 /* NewCell.xib */; };
+		A8EF3275246704F200CF8088 /* AnyTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EF3273246704F200CF8088 /* AnyTypeCell.swift */; };
+		A8EF3276246704F200CF8088 /* AnyTypeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8EF3274246704F200CF8088 /* AnyTypeCell.xib */; };
+		A8EF327A2467057E00CF8088 /* CategoryColCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EF32782467057E00CF8088 /* CategoryColCell.swift */; };
+		A8EF327B2467057E00CF8088 /* CategoryColCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8EF32792467057E00CF8088 /* CategoryColCell.xib */; };
+		A8EF327E246706BE00CF8088 /* NewColCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EF327C246706BE00CF8088 /* NewColCell.swift */; };
+		A8EF327F246706BE00CF8088 /* NewColCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8EF327D246706BE00CF8088 /* NewColCell.xib */; };
+		A8EF328224670A0900CF8088 /* AnyTypeColCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EF328024670A0900CF8088 /* AnyTypeColCell.swift */; };
+		A8EF328324670A0900CF8088 /* AnyTypeColCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8EF328124670A0900CF8088 /* AnyTypeColCell.xib */; };
 		A8FAC1D72466DDFC00C8F3BA /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FAC1D62466DDFC00C8F3BA /* BaseViewController.swift */; };
 		A8FAC1D92466DF3B00C8F3BA /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FAC1D82466DF3B00C8F3BA /* Constant.swift */; };
 		A8FAC1DD2466E38E00C8F3BA /* ForgetPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FAC1DB2466E38E00C8F3BA /* ForgetPasswordVC.swift */; };
 		A8FAC1DE2466E38E00C8F3BA /* ForgetPasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8FAC1DC2466E38E00C8F3BA /* ForgetPasswordVC.xib */; };
-		A8FAC1E22466E4A300C8F3BA /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FAC1E02466E4A300C8F3BA /* HomeVC.swift */; };
-		A8FAC1E32466E4A300C8F3BA /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8FAC1E12466E4A300C8F3BA /* HomeVC.xib */; };
 		A8FAC1E62466E53100C8F3BA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FAC1E52466E53100C8F3BA /* Extensions.swift */; };
+		A8FAC1E8246700D700C8F3BA /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FAC1E7246700D700C8F3BA /* HomeVC.swift */; };
+		A8FAC1EC2467013700C8F3BA /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FAC1EA2467013700C8F3BA /* CategoryCell.swift */; };
+		A8FAC1ED2467013700C8F3BA /* CategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8FAC1EB2467013700C8F3BA /* CategoryCell.xib */; };
 		EBDE0EE9160B283B950A9ED7 /* Pods_CineWorld.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D01ED7E948FA4F2B60A9580 /* Pods_CineWorld.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,13 +60,24 @@
 		A8DDDC672465AAD700FBA132 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A8DDDC692465AAD700FBA132 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8DDDC6F2465AB4F00FBA132 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A8EF326F2467044A00CF8088 /* NewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCell.swift; sourceTree = "<group>"; };
+		A8EF32702467044A00CF8088 /* NewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewCell.xib; sourceTree = "<group>"; };
+		A8EF3273246704F200CF8088 /* AnyTypeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyTypeCell.swift; sourceTree = "<group>"; };
+		A8EF3274246704F200CF8088 /* AnyTypeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnyTypeCell.xib; sourceTree = "<group>"; };
+		A8EF32782467057E00CF8088 /* CategoryColCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryColCell.swift; sourceTree = "<group>"; };
+		A8EF32792467057E00CF8088 /* CategoryColCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryColCell.xib; sourceTree = "<group>"; };
+		A8EF327C246706BE00CF8088 /* NewColCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewColCell.swift; sourceTree = "<group>"; };
+		A8EF327D246706BE00CF8088 /* NewColCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewColCell.xib; sourceTree = "<group>"; };
+		A8EF328024670A0900CF8088 /* AnyTypeColCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyTypeColCell.swift; sourceTree = "<group>"; };
+		A8EF328124670A0900CF8088 /* AnyTypeColCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnyTypeColCell.xib; sourceTree = "<group>"; };
 		A8FAC1D62466DDFC00C8F3BA /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		A8FAC1D82466DF3B00C8F3BA /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		A8FAC1DB2466E38E00C8F3BA /* ForgetPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordVC.swift; sourceTree = "<group>"; };
 		A8FAC1DC2466E38E00C8F3BA /* ForgetPasswordVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgetPasswordVC.xib; sourceTree = "<group>"; };
-		A8FAC1E02466E4A300C8F3BA /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
-		A8FAC1E12466E4A300C8F3BA /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
 		A8FAC1E52466E53100C8F3BA /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		A8FAC1E7246700D700C8F3BA /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		A8FAC1EA2467013700C8F3BA /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		A8FAC1EB2467013700C8F3BA /* CategoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCell.xib; sourceTree = "<group>"; };
 		C2AE24D7B7CC21ED3A557CB7 /* Pods-CineWorld.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CineWorld.release.xcconfig"; path = "Target Support Files/Pods-CineWorld/Pods-CineWorld.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -164,6 +186,19 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		A8EF32772467055B00CF8088 /* ColCell */ = {
+			isa = PBXGroup;
+			children = (
+				A8EF32782467057E00CF8088 /* CategoryColCell.swift */,
+				A8EF32792467057E00CF8088 /* CategoryColCell.xib */,
+				A8EF327C246706BE00CF8088 /* NewColCell.swift */,
+				A8EF327D246706BE00CF8088 /* NewColCell.xib */,
+				A8EF328024670A0900CF8088 /* AnyTypeColCell.swift */,
+				A8EF328124670A0900CF8088 /* AnyTypeColCell.xib */,
+			);
+			path = ColCell;
+			sourceTree = "<group>";
+		};
 		A8FAC1DA2466E36000C8F3BA /* ForgetPassword */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,8 +211,9 @@
 		A8FAC1DF2466E47900C8F3BA /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				A8FAC1E02466E4A300C8F3BA /* HomeVC.swift */,
-				A8FAC1E12466E4A300C8F3BA /* HomeVC.xib */,
+				A8EF32772467055B00CF8088 /* ColCell */,
+				A8FAC1E92467011900C8F3BA /* TableCell */,
+				A8FAC1E7246700D700C8F3BA /* HomeVC.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -188,6 +224,19 @@
 				A8FAC1E52466E53100C8F3BA /* Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A8FAC1E92467011900C8F3BA /* TableCell */ = {
+			isa = PBXGroup;
+			children = (
+				A8FAC1EA2467013700C8F3BA /* CategoryCell.swift */,
+				A8FAC1EB2467013700C8F3BA /* CategoryCell.xib */,
+				A8EF326F2467044A00CF8088 /* NewCell.swift */,
+				A8EF32702467044A00CF8088 /* NewCell.xib */,
+				A8EF3273246704F200CF8088 /* AnyTypeCell.swift */,
+				A8EF3274246704F200CF8088 /* AnyTypeCell.xib */,
+			);
+			path = TableCell;
 			sourceTree = "<group>";
 		};
 		C5B374A45A23ADC3B4C49E8F /* Frameworks */ = {
@@ -271,11 +320,16 @@
 				A83A72AB2466B8A3005B6274 /* Quicksand-Regular.ttf in Resources */,
 				A8DDDC702465AB4F00FBA132 /* GoogleService-Info.plist in Resources */,
 				A83A72B22466BED4005B6274 /* RegisterVC.xib in Resources */,
+				A8EF327B2467057E00CF8088 /* CategoryColCell.xib in Resources */,
 				A8FAC1DE2466E38E00C8F3BA /* ForgetPasswordVC.xib in Resources */,
-				A8FAC1E32466E4A300C8F3BA /* HomeVC.xib in Resources */,
+				A8EF327F246706BE00CF8088 /* NewColCell.xib in Resources */,
+				A8EF3276246704F200CF8088 /* AnyTypeCell.xib in Resources */,
 				A83A72AC2466B8A3005B6274 /* Quicksand-Light.ttf in Resources */,
+				A8EF32722467044A00CF8088 /* NewCell.xib in Resources */,
 				A8DDDC652465AAD700FBA132 /* Assets.xcassets in Resources */,
+				A8EF328324670A0900CF8088 /* AnyTypeColCell.xib in Resources */,
 				A8DDDC632465AAD700FBA132 /* Main.storyboard in Resources */,
+				A8FAC1ED2467013700C8F3BA /* CategoryCell.xib in Resources */,
 				A83A72AA2466B8A3005B6274 /* Quicksand-Medium.ttf in Resources */,
 				A83A72AD2466B8A3005B6274 /* Quicksand-Bold.ttf in Resources */,
 			);
@@ -363,13 +417,19 @@
 			files = (
 				A8FAC1D72466DDFC00C8F3BA /* BaseViewController.swift in Sources */,
 				A8FAC1E62466E53100C8F3BA /* Extensions.swift in Sources */,
-				A8FAC1E22466E4A300C8F3BA /* HomeVC.swift in Sources */,
 				A8DDDC602465AAD700FBA132 /* ViewController.swift in Sources */,
+				A8FAC1E8246700D700C8F3BA /* HomeVC.swift in Sources */,
 				A83A72B12466BED4005B6274 /* RegisterVC.swift in Sources */,
 				A8DDDC5C2465AAD700FBA132 /* AppDelegate.swift in Sources */,
+				A8EF328224670A0900CF8088 /* AnyTypeColCell.swift in Sources */,
+				A8EF32712467044A00CF8088 /* NewCell.swift in Sources */,
 				A8DDDC5E2465AAD700FBA132 /* SceneDelegate.swift in Sources */,
 				A8FAC1DD2466E38E00C8F3BA /* ForgetPasswordVC.swift in Sources */,
 				A8FAC1D92466DF3B00C8F3BA /* Constant.swift in Sources */,
+				A8EF3275246704F200CF8088 /* AnyTypeCell.swift in Sources */,
+				A8EF327A2467057E00CF8088 /* CategoryColCell.swift in Sources */,
+				A8FAC1EC2467013700C8F3BA /* CategoryCell.swift in Sources */,
+				A8EF327E246706BE00CF8088 /* NewColCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

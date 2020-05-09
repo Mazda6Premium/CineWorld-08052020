@@ -16,11 +16,22 @@ class ViewController: UIViewController {
     }
     
     @IBAction func tapOnForgetPassword(_ sender: Any) {
+        let vc = ForgetPasswordVC(nibName: "ForgetPasswordVC", bundle: nil)
+        vc.modalPresentationStyle = .overCurrentContext
+        vc.modalTransitionStyle = .crossDissolve
+        self.present(vc, animated: true, completion: nil)
     }
     
     @IBAction func tapOnRegister(_ sender: Any) {
         let vc = RegisterVC(nibName: "RegisterVC", bundle: nil)
         vc.modalPresentationStyle = .overCurrentContext
+        vc.modalTransitionStyle = .crossDissolve
+        self.present(vc, animated: true, completion: nil)
+    }
+    
+    @IBAction func tapOnLogin(_ sender: Any) {
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "tabbarVC")
+        vc.modalPresentationStyle = .overFullScreen
         vc.modalTransitionStyle = .crossDissolve
         self.present(vc, animated: true, completion: nil)
     }
