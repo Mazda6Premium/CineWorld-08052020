@@ -7,5 +7,18 @@ target 'CineWorld' do
 
   # Pods for CineWorld
 	pod 'Firebase/Analytics'
-
+  pod 'IQKeyboardManagerSwift'
+  pod 'Toast-Swift'
+  pod 'Firebase'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Database'
+  pod 'Firebase/Storage'
+  pod 'Firebase/Messaging'
+  pod 'SDWebImage'
+  pod 'JGProgressHUD'
+  pod 'SimpleImageViewer'
+  pod 'FSPagerView'
+  pod "XCDYouTubeKit"
+  pod 'ActionSheetPicker-3.0'
+  
 end

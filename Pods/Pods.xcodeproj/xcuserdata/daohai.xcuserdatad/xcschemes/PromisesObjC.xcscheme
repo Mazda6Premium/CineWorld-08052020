@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BCBCC7BDE617F305F30D14D6B59DCA4F"
+               BlueprintIdentifier = "1E711A0C98AA21D1DCB50E71387279F1"
                BuildableName = "FBLPromises.framework"
                BlueprintName = "PromisesObjC"
                ReferencedContainer = "container:Pods.xcodeproj">
