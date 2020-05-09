@@ -11,6 +11,8 @@
 		A83A72AB2466B8A3005B6274 /* Quicksand-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A83A72A72466B8A3005B6274 /* Quicksand-Regular.ttf */; };
 		A83A72AC2466B8A3005B6274 /* Quicksand-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A83A72A82466B8A3005B6274 /* Quicksand-Light.ttf */; };
 		A83A72AD2466B8A3005B6274 /* Quicksand-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A83A72A92466B8A3005B6274 /* Quicksand-Bold.ttf */; };
+		A83A72B12466BED4005B6274 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83A72AF2466BED4005B6274 /* RegisterVC.swift */; };
+		A83A72B22466BED4005B6274 /* RegisterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A83A72B02466BED4005B6274 /* RegisterVC.xib */; };
 		A8DDDC5C2465AAD700FBA132 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DDDC5B2465AAD700FBA132 /* AppDelegate.swift */; };
 		A8DDDC5E2465AAD700FBA132 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DDDC5D2465AAD700FBA132 /* SceneDelegate.swift */; };
 		A8DDDC602465AAD700FBA132 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DDDC5F2465AAD700FBA132 /* ViewController.swift */; };
@@ -18,6 +20,13 @@
 		A8DDDC652465AAD700FBA132 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8DDDC642465AAD700FBA132 /* Assets.xcassets */; };
 		A8DDDC682465AAD700FBA132 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8DDDC662465AAD700FBA132 /* LaunchScreen.storyboard */; };
 		A8DDDC702465AB4F00FBA132 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A8DDDC6F2465AB4F00FBA132 /* GoogleService-Info.plist */; };
+		A8FAC1D72466DDFC00C8F3BA /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FAC1D62466DDFC00C8F3BA /* BaseViewController.swift */; };
+		A8FAC1D92466DF3B00C8F3BA /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FAC1D82466DF3B00C8F3BA /* Constant.swift */; };
+		A8FAC1DD2466E38E00C8F3BA /* ForgetPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FAC1DB2466E38E00C8F3BA /* ForgetPasswordVC.swift */; };
+		A8FAC1DE2466E38E00C8F3BA /* ForgetPasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8FAC1DC2466E38E00C8F3BA /* ForgetPasswordVC.xib */; };
+		A8FAC1E22466E4A300C8F3BA /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FAC1E02466E4A300C8F3BA /* HomeVC.swift */; };
+		A8FAC1E32466E4A300C8F3BA /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8FAC1E12466E4A300C8F3BA /* HomeVC.xib */; };
+		A8FAC1E62466E53100C8F3BA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FAC1E52466E53100C8F3BA /* Extensions.swift */; };
 		EBDE0EE9160B283B950A9ED7 /* Pods_CineWorld.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D01ED7E948FA4F2B60A9580 /* Pods_CineWorld.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +37,9 @@
 		A83A72A72466B8A3005B6274 /* Quicksand-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Regular.ttf"; sourceTree = "<group>"; };
 		A83A72A82466B8A3005B6274 /* Quicksand-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Light.ttf"; sourceTree = "<group>"; };
 		A83A72A92466B8A3005B6274 /* Quicksand-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Bold.ttf"; sourceTree = "<group>"; };
+		A83A72AF2466BED4005B6274 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		A83A72B02466BED4005B6274 /* RegisterVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterVC.xib; sourceTree = "<group>"; };
+		A83A72B52466C24B005B6274 /* SessionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionData.swift; sourceTree = "<group>"; };
 		A8DDDC582465AAD700FBA132 /* CineWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CineWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8DDDC5B2465AAD700FBA132 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8DDDC5D2465AAD700FBA132 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +49,13 @@
 		A8DDDC672465AAD700FBA132 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A8DDDC692465AAD700FBA132 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8DDDC6F2465AB4F00FBA132 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A8FAC1D62466DDFC00C8F3BA /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		A8FAC1D82466DF3B00C8F3BA /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		A8FAC1DB2466E38E00C8F3BA /* ForgetPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordVC.swift; sourceTree = "<group>"; };
+		A8FAC1DC2466E38E00C8F3BA /* ForgetPasswordVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgetPasswordVC.xib; sourceTree = "<group>"; };
+		A8FAC1E02466E4A300C8F3BA /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		A8FAC1E12466E4A300C8F3BA /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
+		A8FAC1E52466E53100C8F3BA /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		C2AE24D7B7CC21ED3A557CB7 /* Pods-CineWorld.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CineWorld.release.xcconfig"; path = "Target Support Files/Pods-CineWorld/Pods-CineWorld.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,6 +82,25 @@
 			path = Font;
 			sourceTree = "<group>";
 		};
+		A83A72AE2466BEB8005B6274 /* LoginFlow */ = {
+			isa = PBXGroup;
+			children = (
+				A83A72AF2466BED4005B6274 /* RegisterVC.swift */,
+				A83A72B02466BED4005B6274 /* RegisterVC.xib */,
+			);
+			path = LoginFlow;
+			sourceTree = "<group>";
+		};
+		A83A72B32466C228005B6274 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				A83A72B52466C24B005B6274 /* SessionData.swift */,
+				A8FAC1D62466DDFC00C8F3BA /* BaseViewController.swift */,
+				A8FAC1D82466DF3B00C8F3BA /* Constant.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		A8DDDC4F2465AAD700FBA132 = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +122,8 @@
 		A8DDDC5A2465AAD700FBA132 /* CineWorld */ = {
 			isa = PBXGroup;
 			children = (
+				A8FAC1E42466E50700C8F3BA /* Extensions */,
+				A83A72B32466C228005B6274 /* Base */,
 				A83A72A52466B803005B6274 /* Font */,
 				A8DDDC732465AB6100FBA132 /* Controller */,
 				A8DDDC722465AB5B00FBA132 /* View */,
@@ -117,8 +157,37 @@
 			isa = PBXGroup;
 			children = (
 				A8DDDC5F2465AAD700FBA132 /* ViewController.swift */,
+				A8FAC1DF2466E47900C8F3BA /* Home */,
+				A8FAC1DA2466E36000C8F3BA /* ForgetPassword */,
+				A83A72AE2466BEB8005B6274 /* LoginFlow */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		A8FAC1DA2466E36000C8F3BA /* ForgetPassword */ = {
+			isa = PBXGroup;
+			children = (
+				A8FAC1DB2466E38E00C8F3BA /* ForgetPasswordVC.swift */,
+				A8FAC1DC2466E38E00C8F3BA /* ForgetPasswordVC.xib */,
+			);
+			path = ForgetPassword;
+			sourceTree = "<group>";
+		};
+		A8FAC1DF2466E47900C8F3BA /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A8FAC1E02466E4A300C8F3BA /* HomeVC.swift */,
+				A8FAC1E12466E4A300C8F3BA /* HomeVC.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A8FAC1E42466E50700C8F3BA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A8FAC1E52466E53100C8F3BA /* Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		C5B374A45A23ADC3B4C49E8F /* Frameworks */ = {
@@ -201,6 +270,9 @@
 				A8DDDC682465AAD700FBA132 /* LaunchScreen.storyboard in Resources */,
 				A83A72AB2466B8A3005B6274 /* Quicksand-Regular.ttf in Resources */,
 				A8DDDC702465AB4F00FBA132 /* GoogleService-Info.plist in Resources */,
+				A83A72B22466BED4005B6274 /* RegisterVC.xib in Resources */,
+				A8FAC1DE2466E38E00C8F3BA /* ForgetPasswordVC.xib in Resources */,
+				A8FAC1E32466E4A300C8F3BA /* HomeVC.xib in Resources */,
 				A83A72AC2466B8A3005B6274 /* Quicksand-Light.ttf in Resources */,
 				A8DDDC652465AAD700FBA132 /* Assets.xcassets in Resources */,
 				A8DDDC632465AAD700FBA132 /* Main.storyboard in Resources */,
@@ -289,9 +361,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8FAC1D72466DDFC00C8F3BA /* BaseViewController.swift in Sources */,
+				A8FAC1E62466E53100C8F3BA /* Extensions.swift in Sources */,
+				A8FAC1E22466E4A300C8F3BA /* HomeVC.swift in Sources */,
 				A8DDDC602465AAD700FBA132 /* ViewController.swift in Sources */,
+				A83A72B12466BED4005B6274 /* RegisterVC.swift in Sources */,
 				A8DDDC5C2465AAD700FBA132 /* AppDelegate.swift in Sources */,
 				A8DDDC5E2465AAD700FBA132 /* SceneDelegate.swift in Sources */,
+				A8FAC1DD2466E38E00C8F3BA /* ForgetPasswordVC.swift in Sources */,
+				A8FAC1D92466DF3B00C8F3BA /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +515,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2J3K999PRZ;
 				INFOPLIST_FILE = CineWorld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -455,6 +534,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2J3K999PRZ;
 				INFOPLIST_FILE = CineWorld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
