@@ -30,6 +30,7 @@
 		A8EF327F246706BE00CF8088 /* NewColCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8EF327D246706BE00CF8088 /* NewColCell.xib */; };
 		A8EF328224670A0900CF8088 /* AnyTypeColCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EF328024670A0900CF8088 /* AnyTypeColCell.swift */; };
 		A8EF328324670A0900CF8088 /* AnyTypeColCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8EF328124670A0900CF8088 /* AnyTypeColCell.xib */; };
+		A8EF3285246714A100CF8088 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EF3284246714A100CF8088 /* User.swift */; };
 		A8FAC1D72466DDFC00C8F3BA /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FAC1D62466DDFC00C8F3BA /* BaseViewController.swift */; };
 		A8FAC1D92466DF3B00C8F3BA /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FAC1D82466DF3B00C8F3BA /* Constant.swift */; };
 		A8FAC1DD2466E38E00C8F3BA /* ForgetPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FAC1DB2466E38E00C8F3BA /* ForgetPasswordVC.swift */; };
@@ -70,6 +71,7 @@
 		A8EF327D246706BE00CF8088 /* NewColCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewColCell.xib; sourceTree = "<group>"; };
 		A8EF328024670A0900CF8088 /* AnyTypeColCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyTypeColCell.swift; sourceTree = "<group>"; };
 		A8EF328124670A0900CF8088 /* AnyTypeColCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnyTypeColCell.xib; sourceTree = "<group>"; };
+		A8EF3284246714A100CF8088 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A8FAC1D62466DDFC00C8F3BA /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		A8FAC1D82466DF3B00C8F3BA /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		A8FAC1DB2466E38E00C8F3BA /* ForgetPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordVC.swift; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 		A8DDDC712465AB5500FBA132 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A8EF3284246714A100CF8088 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -419,6 +422,7 @@
 				A8FAC1E62466E53100C8F3BA /* Extensions.swift in Sources */,
 				A8DDDC602465AAD700FBA132 /* ViewController.swift in Sources */,
 				A8FAC1E8246700D700C8F3BA /* HomeVC.swift in Sources */,
+				A8EF3285246714A100CF8088 /* User.swift in Sources */,
 				A83A72B12466BED4005B6274 /* RegisterVC.swift in Sources */,
 				A8DDDC5C2465AAD700FBA132 /* AppDelegate.swift in Sources */,
 				A8EF328224670A0900CF8088 /* AnyTypeColCell.swift in Sources */,

@@ -32,13 +32,13 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KRU-w7-ZEj">
-                    <rect key="frame" x="10" y="193" width="394" height="510"/>
+                    <rect key="frame" x="20" y="193" width="374" height="510"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rgh-hy-FhY">
-                            <rect key="frame" x="0.0" y="0.0" width="394" height="44"/>
+                            <rect key="frame" x="0.0" y="0.0" width="374" height="44"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Đăng ký tài khoản" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nmY-Ee-L8c">
-                                    <rect key="frame" x="10" y="11" width="374" height="22.5"/>
+                                    <rect key="frame" x="10" y="11" width="354" height="22.5"/>
                                     <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="18"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
@@ -54,16 +54,16 @@
                             </constraints>
                         </view>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Số điện thoại" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FZr-TR-DFl">
-                            <rect key="frame" x="30" y="174" width="334" height="36"/>
+                            <rect key="frame" x="20" y="174" width="334" height="36"/>
                             <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="36" id="5ZW-Ef-IKV"/>
                             </constraints>
                             <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="14"/>
-                            <textInputTraits key="textInputTraits"/>
+                            <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                         </textField>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mật khẩu" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M5o-Wt-dPY">
-                            <rect key="frame" x="30" y="342" width="334" height="36"/>
+                            <rect key="frame" x="20" y="342" width="334" height="36"/>
                             <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="36" id="BNi-77-4wt"/>
@@ -72,7 +72,7 @@
                             <textInputTraits key="textInputTraits"/>
                         </textField>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tên tài khoản" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q87-cc-ZLT">
-                            <rect key="frame" x="30" y="230" width="334" height="36"/>
+                            <rect key="frame" x="20" y="230" width="334" height="36"/>
                             <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="36" id="T2Y-DR-wNq"/>
@@ -80,15 +80,15 @@
                             <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="TzN-oc-0YV">
-                            <rect key="frame" x="157" y="64" width="80" height="80"/>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="TzN-oc-0YV">
+                            <rect key="frame" x="147" y="64" width="80" height="80"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="80" id="HFT-S2-cc9"/>
                                 <constraint firstAttribute="height" constant="80" id="aHn-Z0-Smu"/>
                             </constraints>
                         </imageView>
                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="9LF-Ch-z7p">
-                            <rect key="frame" x="30" y="454" width="334" height="36"/>
+                            <rect key="frame" x="20" y="454" width="334" height="36"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7LE-yD-paV">
                                     <rect key="frame" x="0.0" y="0.0" width="162" height="36"/>
@@ -118,7 +118,7 @@
                             </constraints>
                         </stackView>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Xác nhận mật khẩu" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6YR-oc-OLV">
-                            <rect key="frame" x="30" y="398" width="334" height="36"/>
+                            <rect key="frame" x="20" y="398" width="334" height="36"/>
                             <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="36" id="ugb-ai-gpc"/>
@@ -127,7 +127,7 @@
                             <textInputTraits key="textInputTraits"/>
                         </textField>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ngày sinh" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JdY-Eh-mvh">
-                            <rect key="frame" x="30" y="286" width="334" height="36"/>
+                            <rect key="frame" x="20" y="286" width="334" height="36"/>
                             <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="36" id="diw-Ee-yyE"/>
@@ -141,7 +141,7 @@
                         <constraint firstItem="9LF-Ch-z7p" firstAttribute="leading" secondItem="M5o-Wt-dPY" secondAttribute="leading" id="036-0V-tef"/>
                         <constraint firstItem="M5o-Wt-dPY" firstAttribute="trailing" secondItem="Q87-cc-ZLT" secondAttribute="trailing" id="0Om-pu-bpP"/>
                         <constraint firstItem="9LF-Ch-z7p" firstAttribute="trailing" secondItem="M5o-Wt-dPY" secondAttribute="trailing" id="3gI-N6-392"/>
-                        <constraint firstItem="FZr-TR-DFl" firstAttribute="leading" secondItem="KRU-w7-ZEj" secondAttribute="leading" constant="30" id="7ES-2L-pMY"/>
+                        <constraint firstItem="FZr-TR-DFl" firstAttribute="leading" secondItem="KRU-w7-ZEj" secondAttribute="leading" constant="20" id="7ES-2L-pMY"/>
                         <constraint firstItem="Q87-cc-ZLT" firstAttribute="top" secondItem="FZr-TR-DFl" secondAttribute="bottom" constant="20" id="8YM-Xy-QSr"/>
                         <constraint firstItem="6YR-oc-OLV" firstAttribute="top" secondItem="M5o-Wt-dPY" secondAttribute="bottom" constant="20" id="9B2-SQ-Nq0"/>
                         <constraint firstItem="Q87-cc-ZLT" firstAttribute="leading" secondItem="FZr-TR-DFl" secondAttribute="leading" id="BBe-Yr-bZz"/>
@@ -158,7 +158,7 @@
                         <constraint firstItem="Rgh-hy-FhY" firstAttribute="top" secondItem="KRU-w7-ZEj" secondAttribute="top" id="fa3-NV-SYT"/>
                         <constraint firstAttribute="height" constant="510" id="hP3-bM-ums"/>
                         <constraint firstItem="JdY-Eh-mvh" firstAttribute="top" secondItem="Q87-cc-ZLT" secondAttribute="bottom" constant="20" id="li3-PM-4G5"/>
-                        <constraint firstAttribute="trailing" secondItem="FZr-TR-DFl" secondAttribute="trailing" constant="30" id="tlz-0s-wha"/>
+                        <constraint firstAttribute="trailing" secondItem="FZr-TR-DFl" secondAttribute="trailing" constant="20" id="tlz-0s-wha"/>
                         <constraint firstItem="M5o-Wt-dPY" firstAttribute="top" secondItem="JdY-Eh-mvh" secondAttribute="bottom" constant="20" id="vVW-Da-ffM"/>
                         <constraint firstItem="FZr-TR-DFl" firstAttribute="top" secondItem="TzN-oc-0YV" secondAttribute="bottom" constant="30" id="yWS-0o-BIN"/>
                         <constraint firstItem="TzN-oc-0YV" firstAttribute="centerX" secondItem="KRU-w7-ZEj" secondAttribute="centerX" id="z8n-u0-Kde"/>
@@ -169,11 +169,11 @@
             <constraints>
                 <constraint firstItem="KRU-w7-ZEj" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="AqB-iX-7JF"/>
                 <constraint firstItem="KRU-w7-ZEj" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="qAN-J4-iCf"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="KRU-w7-ZEj" secondAttribute="trailing" constant="10" id="uRX-2M-KJd"/>
-                <constraint firstItem="KRU-w7-ZEj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="z0M-hR-ccK"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="KRU-w7-ZEj" secondAttribute="trailing" constant="20" id="uRX-2M-KJd"/>
+                <constraint firstItem="KRU-w7-ZEj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="z0M-hR-ccK"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="132" y="134"/>
+            <point key="canvasLocation" x="131.8840579710145" y="133.92857142857142"/>
         </view>
     </objects>
     <resources>
