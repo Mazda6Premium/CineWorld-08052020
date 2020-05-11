@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A8275A25246922BA0059FEB1 /* AccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8275A24246922BA0059FEB1 /* AccountVC.swift */; };
 		A83A72AA2466B8A3005B6274 /* Quicksand-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A83A72A62466B8A3005B6274 /* Quicksand-Medium.ttf */; };
 		A83A72AB2466B8A3005B6274 /* Quicksand-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A83A72A72466B8A3005B6274 /* Quicksand-Regular.ttf */; };
 		A83A72AC2466B8A3005B6274 /* Quicksand-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A83A72A82466B8A3005B6274 /* Quicksand-Light.ttf */; };
@@ -45,6 +46,7 @@
 /* Begin PBXFileReference section */
 		080A10888BB0A3B44D118750 /* Pods-CineWorld.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CineWorld.debug.xcconfig"; path = "Target Support Files/Pods-CineWorld/Pods-CineWorld.debug.xcconfig"; sourceTree = "<group>"; };
 		4D01ED7E948FA4F2B60A9580 /* Pods_CineWorld.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CineWorld.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8275A24246922BA0059FEB1 /* AccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountVC.swift; sourceTree = "<group>"; };
 		A83A72A62466B8A3005B6274 /* Quicksand-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Medium.ttf"; sourceTree = "<group>"; };
 		A83A72A72466B8A3005B6274 /* Quicksand-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Regular.ttf"; sourceTree = "<group>"; };
 		A83A72A82466B8A3005B6274 /* Quicksand-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Light.ttf"; sourceTree = "<group>"; };
@@ -95,6 +97,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A8275A1F24691F2A0059FEB1 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				A8275A24246922BA0059FEB1 /* AccountVC.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
 		A83A72A52466B803005B6274 /* Font */ = {
 			isa = PBXGroup;
 			children = (
@@ -183,6 +193,7 @@
 			children = (
 				A8DDDC5F2465AAD700FBA132 /* ViewController.swift */,
 				A8FAC1DF2466E47900C8F3BA /* Home */,
+				A8275A1F24691F2A0059FEB1 /* Account */,
 				A8FAC1DA2466E36000C8F3BA /* ForgetPassword */,
 				A83A72AE2466BEB8005B6274 /* LoginFlow */,
 			);
@@ -433,6 +444,7 @@
 				A8EF3275246704F200CF8088 /* AnyTypeCell.swift in Sources */,
 				A8EF327A2467057E00CF8088 /* CategoryColCell.swift in Sources */,
 				A8FAC1EC2467013700C8F3BA /* CategoryCell.swift in Sources */,
+				A8275A25246922BA0059FEB1 /* AccountVC.swift in Sources */,
 				A8EF327E246706BE00CF8088 /* NewColCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

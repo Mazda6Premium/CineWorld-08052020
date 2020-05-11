@@ -36,7 +36,7 @@ class RegisterVC: BaseViewController {
         roundCorner(views: [viewPopup], radius: ROUND_CORNER_VIEW_POPUP)
         roundCorner(views: [btnCancel, btnRegister], radius: ROUND_CORNER_BUTTON)
         roundCorner(views: [imgAvatar], radius: 40)
-        addBorder(views: [imgAvatar], width: 2, color: BORDER_IMAGE_COLOR)
+        addBorder(views: [imgAvatar], width: 1.5, color: BORDER_IMAGE_COLOR)
         
         let tapGes = UITapGestureRecognizer(target: self, action: #selector(chooseImage))
         imgAvatar.isUserInteractionEnabled = true
