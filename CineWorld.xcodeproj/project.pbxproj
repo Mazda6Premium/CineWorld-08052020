@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A80F6818246A95E700C4FABC /* PostFilmVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80F6816246A95E700C4FABC /* PostFilmVC.swift */; };
+		A80F6819246A95E700C4FABC /* PostFilmVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A80F6817246A95E700C4FABC /* PostFilmVC.xib */; };
+		A80F681C246A95F800C4FABC /* PostCategoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80F681A246A95F800C4FABC /* PostCategoryVC.swift */; };
+		A80F681D246A95F800C4FABC /* PostCategoryVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A80F681B246A95F800C4FABC /* PostCategoryVC.xib */; };
+		A80F681F246A962500C4FABC /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80F681E246A962500C4FABC /* Category.swift */; };
 		A8275A25246922BA0059FEB1 /* AccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8275A24246922BA0059FEB1 /* AccountVC.swift */; };
 		A83A72AA2466B8A3005B6274 /* Quicksand-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A83A72A62466B8A3005B6274 /* Quicksand-Medium.ttf */; };
 		A83A72AB2466B8A3005B6274 /* Quicksand-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A83A72A72466B8A3005B6274 /* Quicksand-Regular.ttf */; };
@@ -46,6 +51,11 @@
 /* Begin PBXFileReference section */
 		080A10888BB0A3B44D118750 /* Pods-CineWorld.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CineWorld.debug.xcconfig"; path = "Target Support Files/Pods-CineWorld/Pods-CineWorld.debug.xcconfig"; sourceTree = "<group>"; };
 		4D01ED7E948FA4F2B60A9580 /* Pods_CineWorld.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CineWorld.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A80F6816246A95E700C4FABC /* PostFilmVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostFilmVC.swift; sourceTree = "<group>"; };
+		A80F6817246A95E700C4FABC /* PostFilmVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostFilmVC.xib; sourceTree = "<group>"; };
+		A80F681A246A95F800C4FABC /* PostCategoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCategoryVC.swift; sourceTree = "<group>"; };
+		A80F681B246A95F800C4FABC /* PostCategoryVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCategoryVC.xib; sourceTree = "<group>"; };
+		A80F681E246A962500C4FABC /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		A8275A24246922BA0059FEB1 /* AccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountVC.swift; sourceTree = "<group>"; };
 		A83A72A62466B8A3005B6274 /* Quicksand-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Medium.ttf"; sourceTree = "<group>"; };
 		A83A72A72466B8A3005B6274 /* Quicksand-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Regular.ttf"; sourceTree = "<group>"; };
@@ -97,10 +107,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A80F6815246A95AF00C4FABC /* Admin */ = {
+			isa = PBXGroup;
+			children = (
+				A80F6816246A95E700C4FABC /* PostFilmVC.swift */,
+				A80F6817246A95E700C4FABC /* PostFilmVC.xib */,
+				A80F681A246A95F800C4FABC /* PostCategoryVC.swift */,
+				A80F681B246A95F800C4FABC /* PostCategoryVC.xib */,
+			);
+			path = Admin;
+			sourceTree = "<group>";
+		};
 		A8275A1F24691F2A0059FEB1 /* Account */ = {
 			isa = PBXGroup;
 			children = (
 				A8275A24246922BA0059FEB1 /* AccountVC.swift */,
+				A80F6815246A95AF00C4FABC /* Admin */,
 			);
 			path = Account;
 			sourceTree = "<group>";
@@ -176,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				A8EF3284246714A100CF8088 /* User.swift */,
+				A80F681E246A962500C4FABC /* Category.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -334,6 +357,7 @@
 				A83A72AB2466B8A3005B6274 /* Quicksand-Regular.ttf in Resources */,
 				A8DDDC702465AB4F00FBA132 /* GoogleService-Info.plist in Resources */,
 				A83A72B22466BED4005B6274 /* RegisterVC.xib in Resources */,
+				A80F681D246A95F800C4FABC /* PostCategoryVC.xib in Resources */,
 				A8EF327B2467057E00CF8088 /* CategoryColCell.xib in Resources */,
 				A8FAC1DE2466E38E00C8F3BA /* ForgetPasswordVC.xib in Resources */,
 				A8EF327F246706BE00CF8088 /* NewColCell.xib in Resources */,
@@ -343,6 +367,7 @@
 				A8DDDC652465AAD700FBA132 /* Assets.xcassets in Resources */,
 				A8EF328324670A0900CF8088 /* AnyTypeColCell.xib in Resources */,
 				A8DDDC632465AAD700FBA132 /* Main.storyboard in Resources */,
+				A80F6819246A95E700C4FABC /* PostFilmVC.xib in Resources */,
 				A8FAC1ED2467013700C8F3BA /* CategoryCell.xib in Resources */,
 				A83A72AA2466B8A3005B6274 /* Quicksand-Medium.ttf in Resources */,
 				A83A72AD2466B8A3005B6274 /* Quicksand-Bold.ttf in Resources */,
@@ -435,15 +460,18 @@
 				A8FAC1E8246700D700C8F3BA /* HomeVC.swift in Sources */,
 				A8EF3285246714A100CF8088 /* User.swift in Sources */,
 				A83A72B12466BED4005B6274 /* RegisterVC.swift in Sources */,
+				A80F6818246A95E700C4FABC /* PostFilmVC.swift in Sources */,
 				A8DDDC5C2465AAD700FBA132 /* AppDelegate.swift in Sources */,
 				A8EF328224670A0900CF8088 /* AnyTypeColCell.swift in Sources */,
 				A8EF32712467044A00CF8088 /* NewCell.swift in Sources */,
 				A8DDDC5E2465AAD700FBA132 /* SceneDelegate.swift in Sources */,
+				A80F681F246A962500C4FABC /* Category.swift in Sources */,
 				A8FAC1DD2466E38E00C8F3BA /* ForgetPasswordVC.swift in Sources */,
 				A8FAC1D92466DF3B00C8F3BA /* Constant.swift in Sources */,
 				A8EF3275246704F200CF8088 /* AnyTypeCell.swift in Sources */,
 				A8EF327A2467057E00CF8088 /* CategoryColCell.swift in Sources */,
 				A8FAC1EC2467013700C8F3BA /* CategoryCell.swift in Sources */,
+				A80F681C246A95F800C4FABC /* PostCategoryVC.swift in Sources */,
 				A8275A25246922BA0059FEB1 /* AccountVC.swift in Sources */,
 				A8EF327E246706BE00CF8088 /* NewColCell.swift in Sources */,
 			);

@@ -23,6 +23,17 @@ class BaseViewController: UIViewController {
     }
     
     let hud = JGProgressHUD(style: .dark)
+    
+    func setupNavigationBar(title: String) {
+        navigationItem.title = title
+        let backImage = UIImage(named: "back")
+        let backButton = UIBarButtonItem(image: backImage, style: .plain, target: self, action: #selector(popView))
+        self.navigationItem.leftBarButtonItem = backButton
+    }
+    
+    @objc func popView() {
+        self.navigationController?.popViewController(animated: true)
+    }
 
     func roundCorner(views: [UIView], radius: CGFloat) {
         views.forEach { (view) in

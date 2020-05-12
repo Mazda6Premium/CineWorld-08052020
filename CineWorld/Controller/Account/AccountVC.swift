@@ -13,6 +13,16 @@ enum CaseAccount {
     case admin
 }
 
+struct Account {
+    var name = ""
+    var image = ""
+    
+    init(name: String, image: String) {
+        self.name = name
+        self.image = image
+    }
+}
+
 class AccountVC: BaseViewController {
     
     @IBOutlet weak var viewA: UIView!
@@ -29,7 +39,15 @@ class AccountVC: BaseViewController {
     @IBOutlet weak var lbE: UILabel!
     @IBOutlet weak var lbF: UILabel!
     
-    var caseAccount: CaseAccount = .user
+    @IBOutlet weak var imgA: UIImageView!
+    @IBOutlet weak var imgB: UIImageView!
+    @IBOutlet weak var imgC: UIImageView!
+    @IBOutlet weak var imgD: UIImageView!
+    @IBOutlet weak var imgE: UIImageView!
+    @IBOutlet weak var imgF: UIImageView!
+    
+    var caseAccount: CaseAccount = .admin
+    var arrayAccount = [Account]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,29 +58,171 @@ class AccountVC: BaseViewController {
     }
     
     func setupView() {
-        roundCorner(views: [viewA, viewB, viewC, viewD, viewE, viewF], radius: ROUND_CORNER_VIEW_POPUP)
-//        addBorder(views: [viewA, viewB, viewC, viewD], width: 3, color: #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0))
-//        addBorder(views: [viewE, viewF], width: 3, color: MAIN_COLOR)
+        let views: [UIView] = [viewA, viewB, viewC, viewD, viewE, viewF]
+        roundCorner(views: views, radius: ROUND_CORNER_VIEW_POPUP)
+        
+        let tapGes1 = UITapGestureRecognizer(target: self, action: #selector(tapOnViewA))
+        viewA.addGestureRecognizer(tapGes1)
+        
+        let tapGes2 = UITapGestureRecognizer(target: self, action: #selector(tapOnViewB))
+        viewB.addGestureRecognizer(tapGes2)
+        
+        let tapGes3 = UITapGestureRecognizer(target: self, action: #selector(tapOnViewC))
+        viewC.addGestureRecognizer(tapGes3)
+        
+        let tapGes4 = UITapGestureRecognizer(target: self, action: #selector(tapOnViewD))
+        viewD.addGestureRecognizer(tapGes4)
+        
+        let tapGes5 = UITapGestureRecognizer(target: self, action: #selector(tapOnViewE))
+        viewE.addGestureRecognizer(tapGes5)
+        
+        let tapGes6 = UITapGestureRecognizer(target: self, action: #selector(tapOnViewF))
+        viewF.addGestureRecognizer(tapGes6)
     }
     
     func roleForAccount() {
         switch caseAccount {
         case .user:
             // THÔNG TIN CÁ NHÂN, PHIM YÊU THÍCH, ĐÁNH GIÁ, GÓP Ý, ĐỔI MẬT KHẨU, ĐĂNG XUẤT
-            lbA.text = "Thông tin cá nhân"
-            lbB.text = "Yêu thích"
-            lbC.text = "Đánh giá"
-            lbD.text = "Góp ý"
-            lbE.text = "Đổi mật khẩu"
-            lbF.text = "Đăng xuất"
+            arrayAccount = [Account(name: "Thông tin cá nhân", image: "profile"),
+                            Account(name: "Yêu thích", image: "farvourite"),
+                            Account(name: "Đánh giá", image: "rating"),
+                            Account(name: "Góp ý", image: "suggest"),
+                            Account(name: "Đổi mật khẩu", image: "password"),
+                            Account(name: "Đăng xuất", image: "logout")]
+            if arrayAccount.count > 5 {
+                lbA.text = arrayAccount[0].name
+                lbB.text = arrayAccount[1].name
+                lbC.text = arrayAccount[2].name
+                lbD.text = arrayAccount[3].name
+                lbE.text = arrayAccount[4].name
+                lbF.text = arrayAccount[5].name
+                
+                imgA.image = UIImage(named: arrayAccount[0].image)
+                imgB.image = UIImage(named: arrayAccount[1].image)
+                imgC.image = UIImage(named: arrayAccount[2].image)
+                imgD.image = UIImage(named: arrayAccount[3].image)
+                imgE.image = UIImage(named: arrayAccount[4].image)
+                imgF.image = UIImage(named: arrayAccount[5].image)
+            }
+
         case .admin:
             // ĐĂNG PHIM MỚI, QUẢN LÝ THÀNH VIÊN, QUẢN LÝ DANH MỤC, QUẢN LÝ PHIM, QUẢN LÝ DOANH THU, ĐĂNG XUẤT
-            lbA.text = "Đăng phim mới"
-            lbB.text = "Quản lý thành viên"
-            lbC.text = "Quản lý danh mục"
-            lbD.text = "Quản lý phim"
-            lbE.text = "Quản lý doanh thu"
-            lbF.text = "Đăng xuất"
+
+            arrayAccount = [Account(name: "Đăng phim mới", image: "new"),
+                            Account(name: "Quản lý thành viên", image: "usermanager"),
+                            Account(name: "Quản lý danh mục", image: "category"),
+                            Account(name: "Quản lý phim", image: "film"),
+                            Account(name: "Quản lý doanh thu", image: "money"),
+                            Account(name: "Đăng xuất", image: "logout")]
+            
+            if arrayAccount.count > 5 {
+                lbA.text = arrayAccount[0].name
+                lbB.text = arrayAccount[1].name
+                lbC.text = arrayAccount[2].name
+                lbD.text = arrayAccount[3].name
+                lbE.text = arrayAccount[4].name
+                lbF.text = arrayAccount[5].name
+                
+                imgA.image = UIImage(named: arrayAccount[0].image)
+                imgB.image = UIImage(named: arrayAccount[1].image)
+                imgC.image = UIImage(named: arrayAccount[2].image)
+                imgD.image = UIImage(named: arrayAccount[3].image)
+                imgE.image = UIImage(named: arrayAccount[4].image)
+                imgF.image = UIImage(named: arrayAccount[5].image)
+            }
+        }
+    }
+    
+    @objc func tapOnViewA() {
+        UIView.animate(withDuration: 0.3) {
+            self.viewA.alpha = 0.3
+            UIView.animate(withDuration: 0.3) {
+                self.viewA.alpha = 1
+            }
+        }
+        
+        switch caseAccount {
+        case .admin: // ĐĂNG PHIM MỚI
+            let vc = PostCategoryVC(nibName: "PostCategoryVC", bundle: nil)
+            vc.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(vc, animated: true)
+        case .user: // THÔNG TIN CÁ NHÂN
+            return
+        }
+    }
+    
+    @objc func tapOnViewB() {
+        UIView.animate(withDuration: 0.3) {
+            self.viewB.alpha = 0.3
+            UIView.animate(withDuration: 0.3) {
+                self.viewB.alpha = 1
+            }
+        }
+        
+        switch caseAccount {
+        case .admin: // QUẢN LÝ THÀNH VIÊN
+            return
+        case .user: // PHIM YÊU THÍCH
+            return
+        }
+    }
+    
+    @objc func tapOnViewC() {
+        UIView.animate(withDuration: 0.3) {
+            self.viewC.alpha = 0.3
+            UIView.animate(withDuration: 0.3) {
+                self.viewC.alpha = 1
+            }
+        }
+        
+        switch caseAccount {
+        case .admin: // QUẢN LÝ DANH MỤC
+            return
+        case .user: // ĐÁNH GIÁ
+            return
+        }
+
+    }
+    
+    @objc func tapOnViewD() {
+        UIView.animate(withDuration: 0.3) {
+            self.viewD.alpha = 0.3
+            UIView.animate(withDuration: 0.3) {
+                self.viewD.alpha = 1
+            }
+        }
+        
+        switch caseAccount {
+        case .admin: //  QUẢN LÝ PHIM
+            return
+        case .user: // GÓP Ý
+            return
+        }
+    }
+    
+    @objc func tapOnViewE() {
+        UIView.animate(withDuration: 0.3) {
+            self.viewE.alpha = 0.3
+            UIView.animate(withDuration: 0.3) {
+                self.viewE.alpha = 1
+            }
+        }
+        
+        switch caseAccount {
+        case .admin: // QUẢN LÝ DOANH THU
+            return
+        case .user: // ĐỔI MẬT KHẨU
+            return
+        }
+    }
+    
+    @objc func tapOnViewF() { // ĐĂNG XUẤT
+        UIView.animate(withDuration: 0.3) {
+            self.viewF.alpha = 0.3
+            UIView.animate(withDuration: 0.3) {
+                self.viewF.alpha = 1
+            }
         }
     }
 }
