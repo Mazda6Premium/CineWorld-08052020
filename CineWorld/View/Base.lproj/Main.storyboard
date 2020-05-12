@@ -359,17 +359,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="641"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_cut" translatesAutoresizingMaskIntoConstraints="NO" id="l5X-IW-Ek2">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="436"/>
+                            </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bWY-5M-Aea">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="641"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="pYY-iK-8JE" firstAttribute="bottom" secondItem="bWY-5M-Aea" secondAttribute="bottom" id="1Na-e2-SlP"/>
-                            <constraint firstItem="bWY-5M-Aea" firstAttribute="leading" secondItem="pYY-iK-8JE" secondAttribute="leading" id="M5f-7u-HYo"/>
-                            <constraint firstItem="pYY-iK-8JE" firstAttribute="trailing" secondItem="bWY-5M-Aea" secondAttribute="trailing" id="UNH-8S-Irq"/>
-                            <constraint firstItem="bWY-5M-Aea" firstAttribute="top" secondItem="pYY-iK-8JE" secondAttribute="top" id="xNU-yP-jz9"/>
+                            <constraint firstItem="l5X-IW-Ek2" firstAttribute="top" secondItem="pYY-iK-8JE" secondAttribute="top" id="9Pk-Tk-4iw"/>
+                            <constraint firstItem="l5X-IW-Ek2" firstAttribute="leading" secondItem="pYY-iK-8JE" secondAttribute="leading" id="JIb-bR-MB8"/>
+                            <constraint firstItem="bWY-5M-Aea" firstAttribute="trailing" secondItem="pYY-iK-8JE" secondAttribute="trailing" id="RTQ-tw-raI"/>
+                            <constraint firstItem="l5X-IW-Ek2" firstAttribute="height" secondItem="NkG-PQ-POT" secondAttribute="height" multiplier="0.68" id="Sjh-nv-f2G"/>
+                            <constraint firstItem="bWY-5M-Aea" firstAttribute="top" secondItem="pYY-iK-8JE" secondAttribute="top" id="aLI-0O-vrQ"/>
+                            <constraint firstItem="bWY-5M-Aea" firstAttribute="bottom" secondItem="pYY-iK-8JE" secondAttribute="bottom" id="dg2-bR-0z2"/>
+                            <constraint firstItem="l5X-IW-Ek2" firstAttribute="trailing" secondItem="pYY-iK-8JE" secondAttribute="trailing" id="g8E-iA-3np"/>
+                            <constraint firstItem="bWY-5M-Aea" firstAttribute="leading" secondItem="pYY-iK-8JE" secondAttribute="leading" id="sIa-Mi-o2c"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="pYY-iK-8JE"/>
                     </view>
@@ -380,7 +387,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p2h-iJ-PBC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2281" y="-197"/>
+            <point key="canvasLocation" x="2280.8000000000002" y="-197.29064039408868"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="gN2-H8-pao">
@@ -497,6 +504,7 @@
     </scenes>
     <resources>
         <image name="bg" width="1125" height="2437"/>
+        <image name="bg_cut" width="1125" height="1290"/>
         <image name="farvourite" width="36" height="36"/>
         <image name="home" width="32" height="32"/>
         <image name="homefill" width="32" height="32"/>

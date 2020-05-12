@@ -9,6 +9,8 @@
 import UIKit
 
 class CategoryCell: UITableViewCell {
+    
+    @IBOutlet weak var collectionView: UICollectionView!
 
     override func awakeFromNib() {
         super.awakeFromNib()
