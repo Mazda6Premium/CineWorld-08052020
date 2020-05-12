@@ -145,6 +145,7 @@ class AccountVC: BaseViewController {
         switch caseAccount {
         case .admin: // ĐĂNG PHIM MỚI
             let vc = PostCategoryVC(nibName: "PostCategoryVC", bundle: nil)
+            vc.hidesBottomBarWhenPushed = true
             self.navigationController?.pushViewController(vc, animated: true)
         case .user: // THÔNG TIN CÁ NHÂN
             return
