@@ -107,13 +107,12 @@ class AccountVC: BaseViewController {
             }
 
         case .admin:
-            // ĐĂNG PHIM MỚI, QUẢN LÝ THÀNH VIÊN, QUẢN LÝ DANH MỤC, QUẢN LÝ PHIM, QUẢN LÝ DOANH THU, ĐĂNG XUẤT
-
-            arrayAccount = [Account(name: "Đăng phim mới", image: "new"),
+            // ĐĂNG DANH MỤC MỚI, ĐĂNG PHIM MỚI, QUẢN LÝ THÀNH VIÊN, QUẢN LÝ DANH MỤC, QUẢN LÝ PHIM, ĐĂNG XUẤT
+            arrayAccount = [Account(name: "Đăng danh mục mới", image: "new_cate"),
+                            Account(name: "Đăng phim mới", image: "new"),
                             Account(name: "Quản lý thành viên", image: "usermanager"),
                             Account(name: "Quản lý danh mục", image: "category"),
                             Account(name: "Quản lý phim", image: "film"),
-                            Account(name: "Quản lý doanh thu", image: "money"),
                             Account(name: "Đăng xuất", image: "logout")]
             
             if arrayAccount.count > 5 {
@@ -143,7 +142,7 @@ class AccountVC: BaseViewController {
         }
         
         switch caseAccount {
-        case .admin: // ĐĂNG PHIM MỚI
+        case .admin: // ĐĂNG DANH MỤC MỚI
             let vc = PostCategoryVC(nibName: "PostCategoryVC", bundle: nil)
             vc.hidesBottomBarWhenPushed = true
             self.navigationController?.pushViewController(vc, animated: true)
@@ -161,8 +160,10 @@ class AccountVC: BaseViewController {
         }
         
         switch caseAccount {
-        case .admin: // QUẢN LÝ THÀNH VIÊN
-            return
+        case .admin: // ĐĂNG PHIM MỚI
+            let vc = PostFilmVC(nibName: "PostFilmVC", bundle: nil)
+            vc.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(vc, animated: true)
         case .user: // PHIM YÊU THÍCH
             return
         }
@@ -177,7 +178,7 @@ class AccountVC: BaseViewController {
         }
         
         switch caseAccount {
-        case .admin: // QUẢN LÝ DANH MỤC
+        case .admin: // QUẢN LÝ THÀNH VIÊN
             return
         case .user: // ĐÁNH GIÁ
             return
@@ -194,7 +195,7 @@ class AccountVC: BaseViewController {
         }
         
         switch caseAccount {
-        case .admin: //  QUẢN LÝ PHIM
+        case .admin: //  QUẢN LÝ DANH MỤC
             return
         case .user: // GÓP Ý
             return
@@ -210,7 +211,7 @@ class AccountVC: BaseViewController {
         }
         
         switch caseAccount {
-        case .admin: // QUẢN LÝ DOANH THU
+        case .admin: // QUẢN LÝ PHIM
             return
         case .user: // ĐỔI MẬT KHẨU
             return

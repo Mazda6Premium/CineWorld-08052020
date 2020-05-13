@@ -31,7 +31,7 @@
                                     <constraint firstAttribute="height" constant="30" id="IA7-gt-yb4"/>
                                 </constraints>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="70m-Mv-mY9">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star_20" translatesAutoresizingMaskIntoConstraints="NO" id="70m-Mv-mY9">
                                 <rect key="frame" x="10" y="207" width="16" height="16"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="16" id="DBH-53-zx5"/>
@@ -44,7 +44,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mx4-Px-Ycu">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="comment_20" translatesAutoresizingMaskIntoConstraints="NO" id="mx4-Px-Ycu">
                                 <rect key="frame" x="67" y="207" width="16" height="16"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="16" id="MNK-qO-jLv"/>
@@ -57,7 +57,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ehu-bj-gr0">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eye_20" translatesAutoresizingMaskIntoConstraints="NO" id="Ehu-bj-gr0">
                                 <rect key="frame" x="124" y="207" width="16" height="16"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="16" id="7S4-Tq-n7C"/>
@@ -132,4 +132,9 @@
             <point key="canvasLocation" x="34.057971014492757" y="189.50892857142856"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="comment_20" width="20" height="20"/>
+        <image name="eye_20" width="20" height="20"/>
+        <image name="star_20" width="20" height="20"/>
+    </resources>
 </document>
