@@ -13,7 +13,6 @@ class PostFilmVC: BaseViewController {
     
     @IBOutlet weak var viewPopup: UIView!
     @IBOutlet weak var txtCategory: UITextField!
-    @IBOutlet weak var txtType: UITextField!
     @IBOutlet weak var txtVideoName: UITextField!
     @IBOutlet weak var txtLinkVideo: UITextField!
     @IBOutlet weak var tvDescription: UITextView!
@@ -22,9 +21,11 @@ class PostFilmVC: BaseViewController {
     @IBOutlet weak var txtView: UITextField!
     @IBOutlet weak var txtIndex: UITextField!
     @IBOutlet weak var btnPost: UIButton!
+    @IBOutlet weak var imgFilm: UIImageView!
+    @IBOutlet weak var imgAvatar: UIImageView!
     
     var arrayCategory = [Category]()
-    var categoryName = [String]()
+    var categoryName = ["Top New", "Top Hot", "Top View", "Top Rating"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,8 +38,12 @@ class PostFilmVC: BaseViewController {
     func setupView() {
         setupNavigationBar(title: "Đăng phim mới")
         roundCorner(views: [viewPopup], radius: ROUND_CORNER_VIEW_POPUP)
-        roundCorner(views: [txtCategory, txtType, txtVideoName, txtLinkVideo, tvDescription, txtStar, txtComment, txtView, txtIndex, btnPost], radius: ROUND_CORNER_BUTTON)
+        roundCorner(views: [txtCategory, txtVideoName, txtLinkVideo, tvDescription, txtStar, txtComment, txtView, txtIndex, btnPost], radius: ROUND_CORNER_BUTTON)
         addShadow(views: [viewPopup])
+        
+        roundCorner(views: [imgFilm], radius: ROUND_CORNER_IMAGE)
+        roundCorner(views: [imgAvatar], radius: 30)
+        addBorder(views: [imgAvatar, imgFilm], width: 1, color: BORDER_IMAGE_COLOR)
         
         txtCategory.delegate = self
     }
@@ -62,13 +67,13 @@ class PostFilmVC: BaseViewController {
     @IBAction func tapOnPostFilm(_ sender: Any) {
         self.view.endEditing(true)
         showLoading()
-        if txtCategory.text == "" || txtType.text == "" || txtVideoName.text == "" || txtLinkVideo.text == "" || tvDescription.text == "" || txtStar.text == "" || txtComment.text == "" || txtView.text == "" || txtIndex.text == "" {
+        if txtCategory.text == "" || txtVideoName.text == "" || txtLinkVideo.text == "" || tvDescription.text == "" || txtStar.text == "" || txtComment.text == "" || txtView.text == "" || txtIndex.text == "" {
             showToast(message: "Cần nhập đầy đủ thông tin.")
             hideLoading()
         } else {
             let key = databaseReference.childByAutoId().key!
-            let film = Film(name: txtVideoName.text!, id: key, index: Int(txtIndex.text!)!, noComment: Int(txtComment.text!)!, noView: Int(txtView.text!)!, noStar: Int(txtStar.text!)!, description: tvDescription.text, link: txtLinkVideo.text!, category: txtCategory.text!, type: txtType.text!)
-            databaseReference.child("Film").child(txtType.text!).child(key).setValue(film.asDictionary())
+            let film = Film(name: txtVideoName.text!, id: key, index: Int(txtIndex.text!)!, noComment: Int(txtComment.text!)!, noView: Int(txtView.text!)!, noStar: Double(txtStar.text!)!, description: tvDescription.text, link: txtLinkVideo.text!, category: txtCategory.text!)
+            databaseReference.child("Film").child(txtCategory.text!).child(key).setValue(film.asDictionary())
             
             showToast(message: "Đăng film thành công")
             hideLoading()
@@ -78,7 +83,6 @@ class PostFilmVC: BaseViewController {
     
     @objc func clearData() {
         txtCategory.text = ""
-        txtType.text = ""
         txtVideoName.text = ""
         txtLinkVideo.text = ""
         tvDescription.text = ""
@@ -91,11 +95,18 @@ class PostFilmVC: BaseViewController {
 
 extension PostFilmVC: UITextFieldDelegate {
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
-        ActionSheetStringPicker(title: "Chọn danh mục", rows: self.categoryName, initialSelection: 0, doneBlock: { (picker, index, value) in
-            if let data = value as? String {
-                self.txtCategory.text = data
-            }
-        }, cancel: nil, origin: txtCategory).show()
-        return false
+        switch textField {
+        case txtCategory:
+            ActionSheetStringPicker(title: "Chọn danh mục", rows: self.categoryName, initialSelection: 0, doneBlock: { (picker, index, value) in
+                if let data = value as? String {
+                    self.txtCategory.text = data
+                }
+            }, cancel: nil, origin: txtCategory).show()
+            return false
+            
+        default:
+            return true
+        }
+
     }
 }
