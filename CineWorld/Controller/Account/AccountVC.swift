@@ -85,9 +85,9 @@ class AccountVC: BaseViewController {
         case .user:
             // THÔNG TIN CÁ NHÂN, PHIM YÊU THÍCH, ĐÁNH GIÁ, GÓP Ý, ĐỔI MẬT KHẨU, ĐĂNG XUẤT
             arrayAccount = [Account(name: "Thông tin cá nhân", image: "profile"),
-                            Account(name: "Yêu thích", image: "farvourite"),
+                            Account(name: "Yêu thích", image: "favorite"),
                             Account(name: "Đánh giá", image: "rating"),
-                            Account(name: "Góp ý", image: "suggest"),
+                            Account(name: "Góp ý", image: "mail"),
                             Account(name: "Đổi mật khẩu", image: "password"),
                             Account(name: "Đăng xuất", image: "logout")]
             if arrayAccount.count > 5 {
@@ -108,11 +108,11 @@ class AccountVC: BaseViewController {
 
         case .admin:
             // ĐĂNG DANH MỤC MỚI, ĐĂNG PHIM MỚI, QUẢN LÝ THÀNH VIÊN, QUẢN LÝ DANH MỤC, QUẢN LÝ PHIM, ĐĂNG XUẤT
-            arrayAccount = [Account(name: "Đăng danh mục mới", image: "new_cate"),
-                            Account(name: "Đăng phim mới", image: "new"),
-                            Account(name: "Quản lý thành viên", image: "usermanager"),
-                            Account(name: "Quản lý danh mục", image: "category"),
-                            Account(name: "Quản lý phim", image: "film"),
+            arrayAccount = [Account(name: "Đăng danh mục mới", image: "danhmucmoi"),
+                            Account(name: "Đăng phim mới", image: "phimmoi"),
+                            Account(name: "Quản lý thành viên", image: "qluser"),
+                            Account(name: "Quản lý danh mục", image: "qlcategory"),
+                            Account(name: "Quản lý phim", image: "qlfilm"),
                             Account(name: "Đăng xuất", image: "logout")]
             
             if arrayAccount.count > 5 {

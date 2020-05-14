@@ -138,7 +138,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fh0-Fe-Y1l">
                                         <rect key="frame" x="0.0" y="0.0" width="127.66666666666667" height="128.33333333333334"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="suggest" translatesAutoresizingMaskIntoConstraints="NO" id="ecu-NF-a7e">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ecu-NF-a7e">
                                                 <rect key="frame" x="43.666666666666671" y="30" width="40" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="40" id="TCs-x9-Irv"/>
@@ -164,7 +164,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AZH-4b-jPL">
                                         <rect key="frame" x="167.66666666666666" y="0.0" width="127.33333333333334" height="128.33333333333334"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rating" translatesAutoresizingMaskIntoConstraints="NO" id="eWD-bN-eXy">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eWD-bN-eXy">
                                                 <rect key="frame" x="43.666666666666686" y="30" width="40" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="GG2-zP-Ixi"/>
@@ -195,7 +195,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eWn-8i-Z38">
                                         <rect key="frame" x="0.0" y="0.0" width="127.66666666666667" height="128"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="password" translatesAutoresizingMaskIntoConstraints="NO" id="CUK-Mz-THR">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CUK-Mz-THR">
                                                 <rect key="frame" x="43.666666666666671" y="30" width="40" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="40" id="kc1-c4-lfT"/>
@@ -221,7 +221,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JZu-g8-UoX">
                                         <rect key="frame" x="167.66666666666666" y="0.0" width="127.33333333333334" height="128"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logout" translatesAutoresizingMaskIntoConstraints="NO" id="mJp-6Q-5mb">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mJp-6Q-5mb">
                                                 <rect key="frame" x="43.666666666666686" y="30" width="40" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="Ofq-gg-gk2"/>
@@ -252,7 +252,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="olq-ES-BgZ">
                                         <rect key="frame" x="0.0" y="0.0" width="127.66666666666667" height="128"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="63W-o6-oVx">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="63W-o6-oVx">
                                                 <rect key="frame" x="43.666666666666671" y="30" width="40" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="3CY-NR-fUY"/>
@@ -278,7 +278,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QVg-cP-Bwh">
                                         <rect key="frame" x="167.66666666666666" y="0.0" width="127.33333333333334" height="128"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="farvourite" translatesAutoresizingMaskIntoConstraints="NO" id="Mob-Q4-mvM">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Mob-Q4-mvM">
                                                 <rect key="frame" x="43.666666666666686" y="30" width="40" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="40" id="UGH-Md-M23"/>
@@ -482,7 +482,7 @@
         <scene sceneID="anE-eD-qaY">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Npr-HU-Zgc" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Đánh giá" image="review" selectedImage="reviewfill" id="LN2-hI-pXk"/>
+                    <tabBarItem key="tabBarItem" title="Đánh giá" image="star" selectedImage="starfill" id="LN2-hI-pXk"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="7fA-sB-r8s">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
@@ -506,18 +506,12 @@
     <resources>
         <image name="bg" width="1125" height="2437"/>
         <image name="bg_cut" width="1125" height="1290"/>
-        <image name="farvourite" width="36" height="36"/>
-        <image name="home" width="32" height="32"/>
-        <image name="homefill" width="32" height="32"/>
-        <image name="logout" width="36" height="36"/>
-        <image name="password" width="36" height="36"/>
+        <image name="home" width="24" height="24"/>
+        <image name="homefill" width="24" height="24"/>
         <image name="pen" width="24" height="24"/>
-        <image name="profile" width="36" height="36"/>
-        <image name="rating" width="36" height="36"/>
-        <image name="review" width="32" height="32"/>
-        <image name="reviewfill" width="32" height="32"/>
-        <image name="suggest" width="36" height="36"/>
-        <image name="user" width="32" height="32"/>
-        <image name="userfill" width="32" height="32"/>
+        <image name="star" width="24" height="24"/>
+        <image name="starfill" width="24" height="24"/>
+        <image name="user" width="24" height="24"/>
+        <image name="userfill" width="24" height="24"/>
     </resources>
 </document>
