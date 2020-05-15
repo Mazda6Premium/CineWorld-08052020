@@ -25,7 +25,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vrZ-EB-qpl">
                         <rect key="frame" x="0.0" y="0.0" width="185" height="235"/>
                         <subviews>
-                            <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="584-me-yIo">
+                            <view alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="584-me-yIo">
                                 <rect key="frame" x="0.0" y="205" width="185" height="30"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -33,48 +33,48 @@
                                 </constraints>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star_20" translatesAutoresizingMaskIntoConstraints="NO" id="hhL-77-KET">
-                                <rect key="frame" x="10" y="212" width="16" height="16"/>
+                                <rect key="frame" x="10" y="212.5" width="15" height="15"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="16" id="TQQ-z4-bce"/>
-                                    <constraint firstAttribute="height" constant="16" id="ZkM-hL-wS4"/>
+                                    <constraint firstAttribute="width" constant="15" id="TQQ-z4-bce"/>
+                                    <constraint firstAttribute="height" constant="15" id="ZkM-hL-wS4"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8mL-vU-bl7">
-                                <rect key="frame" x="30" y="214" width="27" height="12"/>
+                                <rect key="frame" x="29" y="214" width="27" height="12"/>
                                 <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="10"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="comment_20" translatesAutoresizingMaskIntoConstraints="NO" id="4Fk-9V-UzN">
-                                <rect key="frame" x="67" y="212" width="16" height="16"/>
+                                <rect key="frame" x="66" y="212.5" width="15" height="15"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="16" id="1Di-rh-keJ"/>
-                                    <constraint firstAttribute="width" constant="16" id="Olm-DC-UMF"/>
+                                    <constraint firstAttribute="height" constant="15" id="1Di-rh-keJ"/>
+                                    <constraint firstAttribute="width" constant="15" id="Olm-DC-UMF"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UW8-rB-39B">
-                                <rect key="frame" x="87" y="214" width="27" height="12"/>
+                                <rect key="frame" x="85" y="214" width="27" height="12"/>
                                 <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="10"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eye_20" translatesAutoresizingMaskIntoConstraints="NO" id="cwM-8i-Muw">
-                                <rect key="frame" x="124" y="212" width="16" height="16"/>
+                                <rect key="frame" x="122" y="212.5" width="15" height="15"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="16" id="6MX-ph-fib"/>
-                                    <constraint firstAttribute="height" constant="16" id="KNn-fP-9yu"/>
+                                    <constraint firstAttribute="width" constant="15" id="6MX-ph-fib"/>
+                                    <constraint firstAttribute="height" constant="15" id="KNn-fP-9yu"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qhx-Zy-kCj">
-                                <rect key="frame" x="144" y="214" width="27" height="12"/>
+                                <rect key="frame" x="141" y="214" width="27" height="12"/>
                                 <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="10"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5d5-3I-qXx">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5d5-3I-qXx">
                                 <rect key="frame" x="0.0" y="30" width="185" height="175"/>
                             </imageView>
-                            <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vyH-B2-UqZ">
+                            <view alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vyH-B2-UqZ">
                                 <rect key="frame" x="0.0" y="0.0" width="185" height="30"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -122,6 +122,7 @@
                     </view>
                 </subviews>
             </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="vrZ-EB-qpl" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="OUz-eU-EV9"/>
                 <constraint firstItem="vrZ-EB-qpl" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="XKc-DX-jvE"/>
