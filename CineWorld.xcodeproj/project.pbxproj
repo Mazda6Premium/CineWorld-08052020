@@ -13,6 +13,7 @@
 		A80F681D246A95F800C4FABC /* PostCategoryVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A80F681B246A95F800C4FABC /* PostCategoryVC.xib */; };
 		A80F681F246A962500C4FABC /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80F681E246A962500C4FABC /* Category.swift */; };
 		A8275A25246922BA0059FEB1 /* AccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8275A24246922BA0059FEB1 /* AccountVC.swift */; };
+		A830FF9F246BA21400A7F624 /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = A830FF9E246BA21400A7F624 /* Film.swift */; };
 		A83A72AA2466B8A3005B6274 /* Quicksand-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A83A72A62466B8A3005B6274 /* Quicksand-Medium.ttf */; };
 		A83A72AB2466B8A3005B6274 /* Quicksand-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A83A72A72466B8A3005B6274 /* Quicksand-Regular.ttf */; };
 		A83A72AC2466B8A3005B6274 /* Quicksand-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A83A72A82466B8A3005B6274 /* Quicksand-Light.ttf */; };
@@ -57,6 +58,7 @@
 		A80F681B246A95F800C4FABC /* PostCategoryVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCategoryVC.xib; sourceTree = "<group>"; };
 		A80F681E246A962500C4FABC /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		A8275A24246922BA0059FEB1 /* AccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountVC.swift; sourceTree = "<group>"; };
+		A830FF9E246BA21400A7F624 /* Film.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Film.swift; sourceTree = "<group>"; };
 		A83A72A62466B8A3005B6274 /* Quicksand-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Medium.ttf"; sourceTree = "<group>"; };
 		A83A72A72466B8A3005B6274 /* Quicksand-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Regular.ttf"; sourceTree = "<group>"; };
 		A83A72A82466B8A3005B6274 /* Quicksand-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Light.ttf"; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 			children = (
 				A8EF3284246714A100CF8088 /* User.swift */,
 				A80F681E246A962500C4FABC /* Category.swift */,
+				A830FF9E246BA21400A7F624 /* Film.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -467,6 +470,7 @@
 				A8DDDC5E2465AAD700FBA132 /* SceneDelegate.swift in Sources */,
 				A80F681F246A962500C4FABC /* Category.swift in Sources */,
 				A8FAC1DD2466E38E00C8F3BA /* ForgetPasswordVC.swift in Sources */,
+				A830FF9F246BA21400A7F624 /* Film.swift in Sources */,
 				A8FAC1D92466DF3B00C8F3BA /* Constant.swift in Sources */,
 				A8EF3275246704F200CF8088 /* AnyTypeCell.swift in Sources */,
 				A8EF327A2467057E00CF8088 /* CategoryColCell.swift in Sources */,
@@ -621,6 +625,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2J3K999PRZ;
 				INFOPLIST_FILE = CineWorld/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -640,6 +645,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2J3K999PRZ;
 				INFOPLIST_FILE = CineWorld/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

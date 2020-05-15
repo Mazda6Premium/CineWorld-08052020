@@ -40,6 +40,7 @@ class PostCategoryVC: BaseViewController {
         showLoading()
         if tvFilmName.text == "" || txtIndex.text == "" {
             showToast(message: "Vui lòng điền đầy đủ thông tin.")
+            hideLoading()
             return
         }
         

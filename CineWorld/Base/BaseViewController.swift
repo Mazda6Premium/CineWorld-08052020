@@ -75,6 +75,10 @@ class BaseViewController: UIViewController {
             dismiss(animated: true, completion: nil)
         }
     }
+    
+    func getYoutubeId(youtubeUrl: String) -> String? {
+        return URLComponents(string: youtubeUrl)?.queryItems?.first(where: { $0.name == "v" })?.value
+    }
 }
 
 
@@ -93,10 +97,6 @@ extension BaseViewController {
     
     func hideLoading() {
         hud.dismiss()
-    }
-    
-    func getYoutubeId(youtubeUrl: String) -> String? {
-        return URLComponents(string: youtubeUrl)?.queryItems?.first(where: { $0.name == "v" })?.value
     }
 }
 

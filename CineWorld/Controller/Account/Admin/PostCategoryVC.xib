@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -33,7 +34,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ejM-nk-QCB">
-                    <rect key="frame" x="16" y="60" width="382" height="248"/>
+                    <rect key="frame" x="10" y="54" width="394" height="239"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="szP-eO-HuC">
                             <rect key="frame" x="8" y="8" width="60" height="60"/>
@@ -43,26 +44,26 @@
                             </constraints>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trung Béo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qFx-87-iSj">
-                            <rect key="frame" x="78" y="12" width="294" height="20"/>
+                            <rect key="frame" x="78" y="12" width="306" height="20"/>
                             <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="16"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Administrator" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="elc-7Y-0zE">
-                            <rect key="frame" x="78" y="45.5" width="294" height="17.5"/>
+                            <rect key="frame" x="78" y="45.5" width="306" height="17.5"/>
                             <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand Medium" pointSize="14"/>
                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="NCR-AG-AJb">
-                            <rect key="frame" x="254" y="76" width="120" height="120"/>
+                            <rect key="frame" x="269" y="73" width="120" height="120"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="120" id="Nci-7P-mEy"/>
                                 <constraint firstAttribute="height" constant="120" id="t4l-0K-Zij"/>
                             </constraints>
                         </imageView>
                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="JSY-e9-wJT">
-                            <rect key="frame" x="8" y="76" width="238" height="120"/>
+                            <rect key="frame" x="5" y="73" width="259" height="120"/>
                             <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="120" id="xEY-sM-ag2"/>
@@ -72,7 +73,7 @@
                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                         </textView>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z8a-sG-SJH">
-                            <rect key="frame" x="116" y="204" width="258" height="36"/>
+                            <rect key="frame" x="110" y="198" width="279" height="36"/>
                             <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="36" id="3NK-04-LLe"/>
@@ -86,7 +87,7 @@
                             </connections>
                         </button>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Số thứ tự" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fb9-sE-GMi">
-                            <rect key="frame" x="8" y="204" width="100" height="36"/>
+                            <rect key="frame" x="5" y="198" width="100" height="36"/>
                             <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="36" id="h5n-0E-Kr5"/>
@@ -98,33 +99,33 @@
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     <constraints>
-                        <constraint firstItem="Z8a-sG-SJH" firstAttribute="top" secondItem="JSY-e9-wJT" secondAttribute="bottom" constant="8" id="0X6-kP-LEm"/>
+                        <constraint firstItem="Z8a-sG-SJH" firstAttribute="top" secondItem="JSY-e9-wJT" secondAttribute="bottom" constant="5" id="0X6-kP-LEm"/>
                         <constraint firstItem="NCR-AG-AJb" firstAttribute="top" secondItem="JSY-e9-wJT" secondAttribute="top" id="2dN-gY-aHd"/>
                         <constraint firstItem="elc-7Y-0zE" firstAttribute="bottom" secondItem="szP-eO-HuC" secondAttribute="bottom" constant="-5" id="3Rg-6O-DiD"/>
                         <constraint firstItem="szP-eO-HuC" firstAttribute="leading" secondItem="ejM-nk-QCB" secondAttribute="leading" constant="8" id="7Ke-vz-BuO"/>
                         <constraint firstItem="elc-7Y-0zE" firstAttribute="leading" secondItem="szP-eO-HuC" secondAttribute="trailing" constant="10" id="7pJ-Z4-Rti"/>
-                        <constraint firstItem="NCR-AG-AJb" firstAttribute="leading" secondItem="JSY-e9-wJT" secondAttribute="trailing" constant="8" id="BhJ-wd-HpR"/>
-                        <constraint firstAttribute="bottom" secondItem="Z8a-sG-SJH" secondAttribute="bottom" constant="8" id="Duf-MY-tjb"/>
-                        <constraint firstAttribute="trailing" secondItem="NCR-AG-AJb" secondAttribute="trailing" constant="8" id="IQw-aC-V7N"/>
-                        <constraint firstItem="Z8a-sG-SJH" firstAttribute="leading" secondItem="fb9-sE-GMi" secondAttribute="trailing" constant="8" id="QAV-sp-G51"/>
-                        <constraint firstItem="fb9-sE-GMi" firstAttribute="top" secondItem="JSY-e9-wJT" secondAttribute="bottom" constant="8" id="Qlv-OL-IUX"/>
+                        <constraint firstItem="NCR-AG-AJb" firstAttribute="leading" secondItem="JSY-e9-wJT" secondAttribute="trailing" constant="5" id="BhJ-wd-HpR"/>
+                        <constraint firstAttribute="bottom" secondItem="Z8a-sG-SJH" secondAttribute="bottom" constant="5" id="Duf-MY-tjb"/>
+                        <constraint firstAttribute="trailing" secondItem="NCR-AG-AJb" secondAttribute="trailing" constant="5" id="IQw-aC-V7N"/>
+                        <constraint firstItem="Z8a-sG-SJH" firstAttribute="leading" secondItem="fb9-sE-GMi" secondAttribute="trailing" constant="5" id="QAV-sp-G51"/>
+                        <constraint firstItem="fb9-sE-GMi" firstAttribute="top" secondItem="JSY-e9-wJT" secondAttribute="bottom" constant="5" id="Qlv-OL-IUX"/>
                         <constraint firstItem="qFx-87-iSj" firstAttribute="top" secondItem="ejM-nk-QCB" secondAttribute="top" constant="12" id="Uic-rI-uYa"/>
                         <constraint firstItem="szP-eO-HuC" firstAttribute="top" secondItem="ejM-nk-QCB" secondAttribute="top" constant="8" id="X2E-Z0-Hg1"/>
                         <constraint firstItem="qFx-87-iSj" firstAttribute="leading" secondItem="szP-eO-HuC" secondAttribute="trailing" constant="10" id="dBj-tm-BvF"/>
-                        <constraint firstAttribute="trailing" secondItem="Z8a-sG-SJH" secondAttribute="trailing" constant="8" id="eD2-tK-Ork"/>
-                        <constraint firstItem="JSY-e9-wJT" firstAttribute="top" secondItem="szP-eO-HuC" secondAttribute="bottom" constant="8" id="gei-s0-Kug"/>
+                        <constraint firstAttribute="trailing" secondItem="Z8a-sG-SJH" secondAttribute="trailing" constant="5" id="eD2-tK-Ork"/>
+                        <constraint firstItem="JSY-e9-wJT" firstAttribute="top" secondItem="szP-eO-HuC" secondAttribute="bottom" constant="5" id="gei-s0-Kug"/>
                         <constraint firstItem="fb9-sE-GMi" firstAttribute="leading" secondItem="JSY-e9-wJT" secondAttribute="leading" id="nE1-Rx-5tl"/>
                         <constraint firstAttribute="trailing" secondItem="elc-7Y-0zE" secondAttribute="trailing" constant="10" id="pSQ-1Q-k4d"/>
                         <constraint firstAttribute="trailing" secondItem="qFx-87-iSj" secondAttribute="trailing" constant="10" id="urU-Nh-Emu"/>
-                        <constraint firstItem="JSY-e9-wJT" firstAttribute="leading" secondItem="ejM-nk-QCB" secondAttribute="leading" constant="8" id="xt7-vC-LW6"/>
+                        <constraint firstItem="JSY-e9-wJT" firstAttribute="leading" secondItem="ejM-nk-QCB" secondAttribute="leading" constant="5" id="xt7-vC-LW6"/>
                     </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="ejM-nk-QCB" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="EOt-9k-PBm"/>
-                <constraint firstItem="ejM-nk-QCB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="ICX-EC-HO3"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ejM-nk-QCB" secondAttribute="trailing" constant="16" id="ktZ-co-Ooc"/>
+                <constraint firstItem="ejM-nk-QCB" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="EOt-9k-PBm"/>
+                <constraint firstItem="ejM-nk-QCB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="ICX-EC-HO3"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ejM-nk-QCB" secondAttribute="trailing" constant="10" id="ktZ-co-Ooc"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="133" y="127"/>
