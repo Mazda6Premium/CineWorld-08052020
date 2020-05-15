@@ -1,16 +1,14 @@
 //
 //  SessionData.swift
-//  TEE8ACADEMY
+//  CineWorld
 //
-//  Created by Trung iOS on 4/8/20.
+//  Created by Trung iOS on 5/15/20.
 //  Copyright © 2020 Fighting. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class SessionData {
-    
     static let shared = SessionData()
     var userData: User?
-    var cart: [Cart]?
 }

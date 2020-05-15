@@ -225,5 +225,11 @@ class AccountVC: BaseViewController {
                 self.viewF.alpha = 1
             }
         }
+        
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "loginVC")
+        vc.modalTransitionStyle = .crossDissolve
+        vc.modalPresentationStyle = .overFullScreen
+        SessionData.shared.userData = nil
+        self.present(vc, animated: true, completion: nil)
     }
 }
