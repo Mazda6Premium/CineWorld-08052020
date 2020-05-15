@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VR5-VF-yEO">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -16,7 +16,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CineWorld" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="loginVC" id="BYZ-38-t0r" customClass="ViewController" customModule="CineWorld" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -501,6 +501,58 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ttw-cW-9tr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="416.80000000000001" y="793.5960591133005"/>
+        </scene>
+        <!--Launch ScreenVC-->
+        <scene sceneID="K7A-Oj-ys4">
+            <objects>
+                <viewController id="VR5-VF-yEO" customClass="LaunchScreenVC" customModule="CineWorld" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c7g-bz-H3g">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="ied-4d-DYS">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TtW-5r-YSt">
+                                <rect key="frame" x="30" y="256" width="315" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="jDw-mS-ZCH"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Đang tải" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="emA-c8-iTM">
+                                <rect key="frame" x="50" y="728" width="275" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="Pso-um-LO0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ied-4d-DYS" firstAttribute="leading" secondItem="c7g-bz-H3g" secondAttribute="leading" id="1O9-mg-M1w"/>
+                            <constraint firstItem="TtW-5r-YSt" firstAttribute="centerX" secondItem="c7g-bz-H3g" secondAttribute="centerX" id="3cv-sS-Okx"/>
+                            <constraint firstItem="emA-c8-iTM" firstAttribute="leading" secondItem="vYO-Nz-tmt" secondAttribute="leading" constant="50" id="Fi3-ym-n4p"/>
+                            <constraint firstItem="TtW-5r-YSt" firstAttribute="centerY" secondItem="c7g-bz-H3g" secondAttribute="centerY" id="SHT-xI-gbL"/>
+                            <constraint firstItem="vYO-Nz-tmt" firstAttribute="trailing" secondItem="emA-c8-iTM" secondAttribute="trailing" constant="50" id="Tdu-ck-bjk"/>
+                            <constraint firstItem="ied-4d-DYS" firstAttribute="trailing" secondItem="vYO-Nz-tmt" secondAttribute="trailing" id="UQD-eF-MaZ"/>
+                            <constraint firstItem="ied-4d-DYS" firstAttribute="top" secondItem="c7g-bz-H3g" secondAttribute="top" id="UlU-f7-B5x"/>
+                            <constraint firstItem="vYO-Nz-tmt" firstAttribute="trailing" secondItem="TtW-5r-YSt" secondAttribute="trailing" constant="30" id="fGI-Pg-Cxb"/>
+                            <constraint firstAttribute="bottom" secondItem="ied-4d-DYS" secondAttribute="bottom" id="g5u-Bc-2Z0"/>
+                            <constraint firstItem="vYO-Nz-tmt" firstAttribute="bottom" secondItem="emA-c8-iTM" secondAttribute="bottom" constant="30" id="k9u-ze-e9E"/>
+                            <constraint firstItem="TtW-5r-YSt" firstAttribute="leading" secondItem="vYO-Nz-tmt" secondAttribute="leading" constant="30" id="oNT-j2-EJ9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vYO-Nz-tmt"/>
+                    </view>
+                    <connections>
+                        <outlet property="imgFrame" destination="TtW-5r-YSt" id="aUi-69-WxX"/>
+                        <outlet property="lbLoading" destination="emA-c8-iTM" id="6C1-5V-ES7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cg1-GJ-WAB" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1334" y="128"/>
         </scene>
     </scenes>
     <resources>
