@@ -360,8 +360,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="641"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_cut" translatesAutoresizingMaskIntoConstraints="NO" id="l5X-IW-Ek2">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="436"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="l5X-IW-Ek2">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="641"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bWY-5M-Aea">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="641"/>
@@ -373,7 +373,7 @@
                             <constraint firstItem="l5X-IW-Ek2" firstAttribute="top" secondItem="pYY-iK-8JE" secondAttribute="top" id="9Pk-Tk-4iw"/>
                             <constraint firstItem="l5X-IW-Ek2" firstAttribute="leading" secondItem="pYY-iK-8JE" secondAttribute="leading" id="JIb-bR-MB8"/>
                             <constraint firstItem="bWY-5M-Aea" firstAttribute="trailing" secondItem="pYY-iK-8JE" secondAttribute="trailing" id="RTQ-tw-raI"/>
-                            <constraint firstItem="l5X-IW-Ek2" firstAttribute="height" secondItem="NkG-PQ-POT" secondAttribute="height" multiplier="0.68" id="Sjh-nv-f2G"/>
+                            <constraint firstItem="l5X-IW-Ek2" firstAttribute="height" secondItem="NkG-PQ-POT" secondAttribute="height" id="Sjh-nv-f2G"/>
                             <constraint firstItem="bWY-5M-Aea" firstAttribute="top" secondItem="pYY-iK-8JE" secondAttribute="top" id="aLI-0O-vrQ"/>
                             <constraint firstItem="bWY-5M-Aea" firstAttribute="bottom" secondItem="pYY-iK-8JE" secondAttribute="bottom" id="dg2-bR-0z2"/>
                             <constraint firstItem="l5X-IW-Ek2" firstAttribute="trailing" secondItem="pYY-iK-8JE" secondAttribute="trailing" id="g8E-iA-3np"/>
@@ -505,7 +505,6 @@
     </scenes>
     <resources>
         <image name="bg" width="1125" height="2437"/>
-        <image name="bg_cut" width="1125" height="1290"/>
         <image name="home" width="24" height="24"/>
         <image name="homefill" width="24" height="24"/>
         <image name="pen" width="24" height="24"/>

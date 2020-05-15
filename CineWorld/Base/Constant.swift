@@ -14,6 +14,7 @@ let ROUND_CORNER_BUTTON: CGFloat = 8
 let ROUND_CORNER_IMAGE: CGFloat = 8
 let BORDER_IMAGE_COLOR: CGColor = #colorLiteral(red: 0.370555222, green: 0.3705646992, blue: 0.3705595732, alpha: 1)
 let MAIN_COLOR: CGColor = #colorLiteral(red: 0.3137254902, green: 0.01568627451, blue: 0.6, alpha: 1)
+let MAIN_UICOLOR = #colorLiteral(red: 0.3137254902, green: 0.01568627451, blue: 0.6, alpha: 1)
 
 let databaseReference = Database.database().reference()
 let storageReference = Storage.storage().reference()

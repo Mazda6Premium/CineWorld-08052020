@@ -16,6 +16,8 @@ class HomeVC: BaseViewController {
     var arrayCategory = [Category]()
     var arrayTopNew = [Film]()
     var arrayTopHot = [Film]()
+    var arrayTopView = [Film]()
+    var arrayTopRating = [Film]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +27,8 @@ class HomeVC: BaseViewController {
         getCategory()
         getTopNew()
         getTopHot()
+        getTopView()
+        getTopRating()
     }
     
     func setupTableView() {
@@ -89,11 +93,44 @@ class HomeVC: BaseViewController {
             }
         }
     }
+    
+    func getTopView() {
+        showLoading()
+        databaseReference.child("Film").child("Top View").observe(.childAdded) { (snapshot) in
+            databaseReference.child("Film").child("Top View").child(snapshot.key).observe(.value) { (snapshot1) in
+                if let dict = snapshot1.value as? [String: Any] {
+                    let topView = Film(fromDict: dict)
+                    self.arrayTopView.append(topView)
+                    DispatchQueue.main.async {
+                        self.tableView.reloadData()
+                        self.hideLoading()
+                    }
+                }
+            }
+        }
+    }
+    
+    func getTopRating() {
+        showLoading()
+        databaseReference.child("Film").child("Top Rating").observe(.childAdded) { (snapshot) in
+            databaseReference.child("Film").child("Top Rating").child(snapshot.key).observe(.value) { (snapshot1) in
+                if let dict = snapshot1.value as? [String: Any] {
+                    let topRating = Film(fromDict: dict)
+                    self.arrayTopRating.append(topRating)
+                    DispatchQueue.main.async {
+                        self.tableView.reloadData()
+                        self.hideLoading()
+                    }
+                }
+            }
+        }
+    }
+
 }
 
 extension HomeVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return 5
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -126,13 +163,43 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
             cell.collectionView.dataSource = self
             let nib = UINib(nibName: "AnyTypeColCell", bundle: nil)
             cell.collectionView.register(nib, forCellWithReuseIdentifier: "anyTypeColCell")
+            cell.lblTitle.text = "Top video hot"
+            cell.collectionView.tag = 2
+            DispatchQueue.main.async {
+                cell.collectionView.reloadData()
+            }
+            return cell
+            
+        case 3:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "anyTypeCell") as! AnyTypeCell
+            cell.collectionView.delegate = self
+            cell.collectionView.dataSource = self
+            let nib = UINib(nibName: "AnyTypeColCell", bundle: nil)
+            cell.collectionView.register(nib, forCellWithReuseIdentifier: "anyTypeColCell")
+            cell.lblTitle.text = "Top lượt xem"
+            cell.collectionView.tag = 3
+            DispatchQueue.main.async {
+                cell.collectionView.reloadData()
+            }
+            return cell
+            
+        case 4:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "anyTypeCell") as! AnyTypeCell
+            cell.collectionView.delegate = self
+            cell.collectionView.dataSource = self
+            let nib = UINib(nibName: "AnyTypeColCell", bundle: nil)
+            cell.collectionView.register(nib, forCellWithReuseIdentifier: "anyTypeColCell")
+            cell.lblTitle.text = "Top lượt đánh giá"
+            cell.collectionView.tag = 4
             DispatchQueue.main.async {
                 cell.collectionView.reloadData()
             }
             return cell
             
         default:
-            return UITableViewCell()
+            let cell = UITableViewCell()
+            cell.backgroundColor = .clear
+            return cell
         }
     }
     
@@ -157,6 +224,10 @@ extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollec
             return arrayTopNew.count
         case 2:
             return arrayTopHot.count
+        case 3:
+            return arrayTopView.count
+        case 4:
+            return arrayTopRating.count
         default:
             return 0
         }
@@ -206,9 +277,45 @@ extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollec
                 }
             }
             return cell
+            
+        case 3:
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "anyTypeColCell", for: indexPath) as! AnyTypeColCell
+            let film = arrayTopView[indexPath.row]
+            cell.lbFilmName.text = film.name
+            cell.lbView.text = "\(film.noView)"
+            cell.lbStar.text = "\(film.noStar)"
+            cell.lbComment.text = "\(film.noComment)"
+            
+            // thumbnail
+            if let filmId = getYoutubeId(youtubeUrl: film.link) {
+                let urlString = "https://i1.ytimg.com/vi/\(filmId)/maxresdefault.jpg"
+                if let url = URL(string: urlString) {
+                    cell.imgFilm.sd_setImage(with: url, completed: nil)
+                }
+            }
+            return cell
+            
+        case 4:
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "anyTypeColCell", for: indexPath) as! AnyTypeColCell
+            let film = arrayTopRating[indexPath.row]
+            cell.lbFilmName.text = film.name
+            cell.lbView.text = "\(film.noView)"
+            cell.lbStar.text = "\(film.noStar)"
+            cell.lbComment.text = "\(film.noComment)"
+            
+            // thumbnail
+            if let filmId = getYoutubeId(youtubeUrl: film.link) {
+                let urlString = "https://i1.ytimg.com/vi/\(filmId)/maxresdefault.jpg"
+                if let url = URL(string: urlString) {
+                    cell.imgFilm.sd_setImage(with: url, completed: nil)
+                }
+            }
+            return cell
         
         default:
-            return UICollectionViewCell()
+            let cell = UICollectionViewCell()
+            cell.backgroundColor = .clear
+            return cell
         }
     }
     
@@ -222,5 +329,4 @@ extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollec
             return CGSize(width: self.view.frame.width / 2.5, height: 200)
         }
     }
-    
 }

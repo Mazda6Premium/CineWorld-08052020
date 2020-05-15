@@ -33,40 +33,40 @@
                                 </constraints>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star_20" translatesAutoresizingMaskIntoConstraints="NO" id="70m-Mv-mY9">
-                                <rect key="frame" x="10" y="162.5" width="15" height="15"/>
+                                <rect key="frame" x="6" y="162.5" width="15" height="15"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="15" id="DBH-53-zx5"/>
                                     <constraint firstAttribute="height" constant="15" id="guK-uS-4Ca"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aqb-lL-fzs">
-                                <rect key="frame" x="29" y="164" width="27" height="12"/>
+                                <rect key="frame" x="24" y="164" width="27" height="12"/>
                                 <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="10"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="comment_20" translatesAutoresizingMaskIntoConstraints="NO" id="mx4-Px-Ycu">
-                                <rect key="frame" x="66" y="162.5" width="15" height="15"/>
+                                <rect key="frame" x="59" y="162.5" width="15" height="15"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="15" id="MNK-qO-jLv"/>
                                     <constraint firstAttribute="width" constant="15" id="fyc-rp-lXI"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fhJ-Pw-uoO">
-                                <rect key="frame" x="85" y="164" width="27" height="12"/>
+                                <rect key="frame" x="77" y="164" width="27" height="12"/>
                                 <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="10"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eye_20" translatesAutoresizingMaskIntoConstraints="NO" id="Ehu-bj-gr0">
-                                <rect key="frame" x="122" y="162.5" width="15" height="15"/>
+                                <rect key="frame" x="112" y="162.5" width="15" height="15"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="15" id="7S4-Tq-n7C"/>
                                     <constraint firstAttribute="width" constant="15" id="xNN-2G-h8b"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jKC-41-apC">
-                                <rect key="frame" x="141" y="164" width="27" height="12"/>
+                                <rect key="frame" x="130" y="164" width="27" height="12"/>
                                 <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="10"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -90,34 +90,44 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ms0-sM-sBm">
+                                <rect key="frame" x="164" y="162.5" width="15" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="15" id="2XS-ub-gDv"/>
+                                    <constraint firstAttribute="height" constant="15" id="PVz-i8-ifQ"/>
+                                </constraints>
+                                <state key="normal" image="info_20"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="ZZa-Sk-8CF" firstAttribute="leading" secondItem="AZu-8G-L6e" secondAttribute="leading" id="1hD-Go-aMt"/>
-                            <constraint firstItem="fhJ-Pw-uoO" firstAttribute="leading" secondItem="mx4-Px-Ycu" secondAttribute="trailing" constant="4" id="2oJ-9h-OSk"/>
+                            <constraint firstItem="fhJ-Pw-uoO" firstAttribute="leading" secondItem="mx4-Px-Ycu" secondAttribute="trailing" constant="3" id="2oJ-9h-OSk"/>
                             <constraint firstItem="5hr-tG-6FU" firstAttribute="centerY" secondItem="lde-kA-9fR" secondAttribute="centerY" id="39r-b6-e8m"/>
                             <constraint firstItem="lde-kA-9fR" firstAttribute="leading" secondItem="AZu-8G-L6e" secondAttribute="leading" id="3MP-P7-XDa"/>
                             <constraint firstAttribute="trailing" secondItem="lde-kA-9fR" secondAttribute="trailing" id="Hqf-Pt-A5a"/>
                             <constraint firstItem="5hr-tG-6FU" firstAttribute="leading" secondItem="AZu-8G-L6e" secondAttribute="leading" constant="10" id="LSS-Mk-Y3F"/>
                             <constraint firstItem="aio-6R-85h" firstAttribute="top" secondItem="ZZa-Sk-8CF" secondAttribute="bottom" id="UFv-fK-lFa"/>
-                            <constraint firstItem="Ehu-bj-gr0" firstAttribute="leading" secondItem="fhJ-Pw-uoO" secondAttribute="trailing" constant="10" id="UwA-M4-QO3"/>
+                            <constraint firstItem="Ehu-bj-gr0" firstAttribute="leading" secondItem="fhJ-Pw-uoO" secondAttribute="trailing" constant="8" id="UwA-M4-QO3"/>
                             <constraint firstItem="aio-6R-85h" firstAttribute="leading" secondItem="AZu-8G-L6e" secondAttribute="leading" id="WLU-MF-NVB"/>
                             <constraint firstItem="70m-Mv-mY9" firstAttribute="centerY" secondItem="aio-6R-85h" secondAttribute="centerY" id="WVn-ya-fTe"/>
                             <constraint firstAttribute="bottom" secondItem="aio-6R-85h" secondAttribute="bottom" id="Y7y-de-eYH"/>
                             <constraint firstItem="mx4-Px-Ycu" firstAttribute="centerY" secondItem="70m-Mv-mY9" secondAttribute="centerY" id="aOr-3T-NBA"/>
-                            <constraint firstItem="mx4-Px-Ycu" firstAttribute="leading" secondItem="aqb-lL-fzs" secondAttribute="trailing" constant="10" id="bgM-Zk-NHl"/>
+                            <constraint firstItem="mx4-Px-Ycu" firstAttribute="leading" secondItem="aqb-lL-fzs" secondAttribute="trailing" constant="8" id="bgM-Zk-NHl"/>
+                            <constraint firstItem="ms0-sM-sBm" firstAttribute="centerY" secondItem="jKC-41-apC" secondAttribute="centerY" id="c4F-eu-mLg"/>
                             <constraint firstItem="jKC-41-apC" firstAttribute="centerY" secondItem="Ehu-bj-gr0" secondAttribute="centerY" id="feT-sg-uTH"/>
                             <constraint firstItem="Ehu-bj-gr0" firstAttribute="centerY" secondItem="mx4-Px-Ycu" secondAttribute="centerY" id="g4h-AH-z7R"/>
-                            <constraint firstItem="70m-Mv-mY9" firstAttribute="leading" secondItem="AZu-8G-L6e" secondAttribute="leading" constant="10" id="hhe-so-X4c"/>
+                            <constraint firstItem="70m-Mv-mY9" firstAttribute="leading" secondItem="AZu-8G-L6e" secondAttribute="leading" constant="6" id="hhe-so-X4c"/>
+                            <constraint firstAttribute="trailing" secondItem="ms0-sM-sBm" secondAttribute="trailing" constant="6" id="itJ-Ux-Ggn"/>
                             <constraint firstAttribute="trailing" secondItem="aio-6R-85h" secondAttribute="trailing" id="krj-Zd-eko"/>
                             <constraint firstItem="ZZa-Sk-8CF" firstAttribute="top" secondItem="lde-kA-9fR" secondAttribute="bottom" id="nkO-uK-CLy"/>
                             <constraint firstItem="lde-kA-9fR" firstAttribute="top" secondItem="AZu-8G-L6e" secondAttribute="top" id="oGM-dX-szl"/>
                             <constraint firstItem="aqb-lL-fzs" firstAttribute="centerY" secondItem="70m-Mv-mY9" secondAttribute="centerY" id="ozV-ec-ZtM"/>
                             <constraint firstAttribute="trailing" secondItem="ZZa-Sk-8CF" secondAttribute="trailing" id="rnv-fy-AmV"/>
-                            <constraint firstItem="aqb-lL-fzs" firstAttribute="leading" secondItem="70m-Mv-mY9" secondAttribute="trailing" constant="4" id="sbf-8t-xVY"/>
+                            <constraint firstItem="aqb-lL-fzs" firstAttribute="leading" secondItem="70m-Mv-mY9" secondAttribute="trailing" constant="3" id="sbf-8t-xVY"/>
                             <constraint firstAttribute="trailing" secondItem="5hr-tG-6FU" secondAttribute="trailing" constant="10" id="vl5-8x-ZMg"/>
                             <constraint firstItem="fhJ-Pw-uoO" firstAttribute="centerY" secondItem="mx4-Px-Ycu" secondAttribute="centerY" id="wW4-8J-sfS"/>
-                            <constraint firstItem="jKC-41-apC" firstAttribute="leading" secondItem="Ehu-bj-gr0" secondAttribute="trailing" constant="4" id="yzo-r4-uF5"/>
+                            <constraint firstItem="jKC-41-apC" firstAttribute="leading" secondItem="Ehu-bj-gr0" secondAttribute="trailing" constant="3" id="yzo-r4-uF5"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -138,12 +148,13 @@
                 <outlet property="lbView" destination="jKC-41-apC" id="pSK-q0-xMu"/>
                 <outlet property="viewCell" destination="AZu-8G-L6e" id="rDA-mD-qWT"/>
             </connections>
-            <point key="canvasLocation" x="34.057971014492757" y="189.50892857142856"/>
+            <point key="canvasLocation" x="34.057971014492757" y="189.17410714285714"/>
         </collectionViewCell>
     </objects>
     <resources>
         <image name="comment_20" width="20" height="20"/>
         <image name="eye_20" width="20" height="20"/>
+        <image name="info_20" width="20" height="20"/>
         <image name="star_20" width="20" height="20"/>
     </resources>
 </document>
